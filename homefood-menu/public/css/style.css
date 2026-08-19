@@ -714,3 +714,27 @@ footer.site-footer{
   .recipe-body .container{ padding: 0 18px; }
   .panel{ padding: 20px; }
 }
+/* ---------- Mobile recipe fix ---------- */
+@media (max-width: 860px){
+  .ingredients-panel{
+    position: static;
+    top: auto;
+  }
+
+  .recipe-layout{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .ingredient-list li{
+    align-items: flex-start;
+  }
+
+  .ingredient-list .name{
+    min-width: 0;
+  }
+
+  .ingredient-list .qty{
+    flex-shrink: 0;
+  }
+}
