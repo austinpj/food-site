@@ -11,5 +11,5 @@
  *    Security on the Supabase side)
  * ============================================================
  */
-window.SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-window.SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_PUBLIC_KEY";
+window.SUPABASE_URL = "pjpmnngilvmoctdrsytl";
+window.SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBqcG1ubmdpbHZtb2N0ZHJzeXRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxMjQwOTMsImV4cCI6MjEwMjcwMDA5M30.qCBYdbAPrt9pU0aR0-6oRqVdn-lFavsWH8BqQHrd0PQ";
