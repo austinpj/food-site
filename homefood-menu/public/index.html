@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home Kitchen — Sign in</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="auth-wrap">
+  <div class="auth-visual" style="background-image:url('https://images.unsplash.com/photo-1742281257687-092746ad6021?q=80&w=1600&auto=format&fit=crop');">
+    <div class="auth-visual-copy">
+      <div class="eyebrow">Home Kitchen</div>
+      <h1>Cook restaurant‑quality dishes, sized just for you.</h1>
+      <p>Pick a dish, tell us how many people are eating, and we'll scale every ingredient automatically — with clear step‑by‑step instructions.</p>
+    </div>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-card fade-in">
+      <div class="brand"><span class="mark">🍲</span> Home Kitchen</div>
+
+      <div class="tabbed-toggle">
+        <button id="tabLogin" class="active" type="button">Log in</button>
+        <button id="tabSignup" type="button">Create account</button>
+      </div>
+
+      <div id="msg" class="form-msg"></div>
+
+      <!-- LOGIN -->
+      <form id="loginForm">
+        <h2>Welcome back</h2>
+        <p class="auth-sub">Log in to pick up right where you left off.</p>
+        <div class="field">
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" type="email" autocomplete="email" required placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" autocomplete="current-password" required placeholder="••••••••" />
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="rememberMe" checked />
+          <label for="rememberMe" style="margin:0;">Keep me logged in on this device</label>
+        </div>
+        <button class="btn btn-primary btn-block btn-lg" type="submit" id="loginBtn">Log in</button>
+        <p class="auth-switch">New here? <a href="#" id="goSignup" class="btn-text">Create an account</a></p>
+      </form>
+
+      <!-- SIGNUP -->
+      <form id="signupForm" style="display:none;">
+        <h2>Create your account</h2>
+        <p class="auth-sub">Takes 30 seconds — then straight into the kitchen.</p>
+        <div class="field">
+          <label for="signupName">Name</label>
+          <input id="signupName" type="text" autocomplete="name" required placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" type="email" autocomplete="email" required placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="signupPassword">Password</label>
+          <input id="signupPassword" type="password" autocomplete="new-password" required minlength="6" placeholder="At least 6 characters" />
+        </div>
+        <button class="btn btn-primary btn-block btn-lg" type="submit" id="signupBtn">Create account</button>
+        <p class="auth-switch">Already have an account? <a href="#" id="goLogin" class="btn-text">Log in</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  const tabLogin = document.getElementById('tabLogin');
+  const tabSignup = document.getElementById('tabSignup');
+  const loginForm = document.getElementById('loginForm');
+  const signupForm = document.getElementById('signupForm');
+  const msg = document.getElementById('msg');
+
+  function showTab(which){
+    const isLogin = which === 'login';
+    tabLogin.classList.toggle('active', isLogin);
+    tabSignup.classList.toggle('active', !isLogin);
+    loginForm.style.display = isLogin ? 'block' : 'none';
+    signupForm.style.display = isLogin ? 'none' : 'block';
+    hideMsg();
+  }
+  tabLogin.addEventListener('click', () => showTab('login'));
+  tabSignup.addEventListener('click', () => showTab('signup'));
+  document.getElementById('goSignup').addEventListener('click', (e)=>{ e.preventDefault(); showTab('signup'); });
+  document.getElementById('goLogin').addEventListener('click', (e)=>{ e.preventDefault(); showTab('login'); });
+
+  function showMsg(text, type){
+    msg.textContent = text;
+    msg.className = 'form-msg show ' + type;
+  }
+  function hideMsg(){ msg.className = 'form-msg'; }
+
+  function setLoading(btn, loading, label){
+    btn.disabled = loading;
+    btn.textContent = loading ? 'Please wait…' : label;
+  }
+
+  // If already logged in, skip straight past this page.
+  redirectIfLoggedIn('select.html');
+
+  loginForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    hideMsg();
+    const btn = document.getElementById('loginBtn');
+    setLoading(btn, true, 'Log in');
+    const email = document.getElementById('loginEmail').value.trim();
+    const password = document.getElementById('loginPassword').value;
+
+    const { error } = await window.sb.auth.signInWithPassword({ email, password });
+
+    setLoading(btn, false, 'Log in');
+    if (error) {
+      showMsg(error.message || 'Could not log in. Check your details and try again.', 'error');
+      return;
+    }
+    window.location.href = 'select.html';
+  });
+
+  signupForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    hideMsg();
+    const btn = document.getElementById('signupBtn');
+    setLoading(btn, true, 'Create account');
+    const name = document.getElementById('signupName').value.trim();
+    const email = document.getElementById('signupEmail').value.trim();
+    const password = document.getElementById('signupPassword').value;
+
+    const { data, error } = await window.sb.auth.signUp({
+      email,
+      password,
+      options: { data: { full_name: name } },
+    });
+
+    setLoading(btn, false, 'Create account');
+    if (error) {
+      showMsg(error.message || 'Could not create your account.', 'error');
+      return;
+    }
+
+    // If the Supabase project has "Confirm email" turned OFF, signUp()
+    // already returns a live session and we can go straight in.
+    if (data.session) {
+      window.location.href = 'select.html';
+      return;
+    }
+
+    // Otherwise Supabase is waiting on an email confirmation click.
+    showMsg('Account created! Check your email to confirm, then log in.', 'success');
+    showTab('login');
+  });
+</script>
+</body>
+</html>

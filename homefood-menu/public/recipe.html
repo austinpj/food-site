@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home Kitchen — Recipe</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="topnav">
+  <div class="container">
+    <div class="brand"><span class="mark">🍲</span> Home Kitchen</div>
+    <div class="nav-right">
+      <div class="nav-user" id="userBadge"></div>
+      <button class="btn btn-ghost" onclick="logout()">Log out</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============== RICE / CHAPATHI MODAL ============== -->
+<div class="modal-overlay" id="modalAccompaniment">
+  <div class="modal-box">
+    <div class="modal-eyebrow">Step 1 of 2</div>
+    <h2>Rice or chapathi?</h2>
+    <p class="hint">How would you like to serve this dish?</p>
+    <div class="choice-grid">
+      <button class="choice-card" data-value="rice">
+        <span class="emoji">🍚</span> Rice
+      </button>
+      <button class="choice-card" data-value="chapathi">
+        <span class="emoji">🫓</span> Chapathi
+      </button>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-primary btn-block" id="btnAccompanimentNext" disabled>Continue</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============== PEOPLE COUNT MODAL ============== -->
+<div class="modal-overlay" id="modalPeople">
+  <div class="modal-box">
+    <div class="modal-eyebrow">Step 2 of 2</div>
+    <h2>How many people?</h2>
+    <p class="hint">We'll scale every ingredient to match.</p>
+    <div class="people-grid" id="peopleGrid">
+      <button class="people-card" data-value="1"><span class="num">1</span><span class="lbl">Myself</span></button>
+      <button class="people-card" data-value="2"><span class="num">2</span><span class="lbl">People</span></button>
+      <button class="people-card" data-value="3"><span class="num">3</span><span class="lbl">People</span></button>
+      <button class="people-card" data-value="4"><span class="num">4</span><span class="lbl">People</span></button>
+      <button class="people-card" data-value="5"><span class="num">5</span><span class="lbl">People</span></button>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-primary btn-block" id="btnPeopleNext" disabled>Show me the recipe</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============== RECIPE CONTENT ============== -->
+<div id="recipeContent" style="display:none;">
+  <section class="recipe-hero" id="recipeHero">
+    <div class="recipe-hero-content">
+      <div class="container">
+        <div class="crumb" style="color:rgba(255,255,255,0.75);">
+          <a href="#" id="crumbDishesLink" class="link-back" style="color:rgba(255,255,255,0.85);">← Back to dishes</a>
+        </div>
+        <span class="serve-pill" id="servePill">Serving —</span>
+        <h1 id="dishTitle">Loading…</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipe-body">
+    <div class="container recipe-layout">
+      <aside class="panel ingredients-panel">
+        <h2>Ingredients</h2>
+        <p class="serving-note" id="baseNote"></p>
+
+        <div class="serving-stepper">
+          <span class="label">Cooking for</span>
+          <div class="stepper-controls">
+            <button class="stepper-btn" id="minusBtn">−</button>
+            <span class="stepper-val" id="peopleVal">2</span>
+            <button class="stepper-btn" id="plusBtn">+</button>
+          </div>
+        </div>
+
+        <span class="accompaniment-tag" id="accompanimentTag">🍚 Serving with rice</span>
+
+        <ul class="ingredient-list" id="ingredientList"></ul>
+      </aside>
+
+      <main class="panel method-panel">
+        <h2>Method</h2>
+        <ol class="step-list" id="stepList"></ol>
+      </main>
+    </div>
+  </section>
+
+  <footer class="site-footer">Home Kitchen · Cooked with care</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  function qs(name){ return new URLSearchParams(window.location.search).get(name); }
+
+  const COUNT_UNITS = ['pcs','cloves','sprigs','drops','strands'];
+
+  function roundNice(n){
+    if (n <= 0) return '0';
+    const r = Math.round(n * 4) / 4; // nearest quarter
+    return Number.isInteger(r) ? String(r) : String(r);
+  }
+
+  function formatQty(qty, unit, factor){
+    const scaled = qty * factor;
+    if (COUNT_UNITS.includes(unit)) {
+      const n = Math.max(1, Math.round(scaled));
+      const label = (n === 1 && unit === 'pcs') ? 'pc' : unit;
+      return n + ' ' + label;
+    }
+    if (unit === 'g' || unit === 'ml') {
+      if (scaled >= 50) return (Math.round(scaled / 5) * 5) + ' ' + unit;
+      if (scaled >= 1) return roundNice(scaled) + ' ' + unit;
+      // Very small amounts (e.g. a pinch of saffron) — never collapse to 0.
+      return Math.max(0.1, Math.round(scaled * 10) / 10).toFixed(1) + ' ' + unit;
+    }
+    return roundNice(scaled) + ' ' + unit;
+  }
+
+  let dish = null, diet = null, cat = null;
+  let accompaniment = null;
+  let people = null;
+
+  function isRiceDish(d){
+    return /biryani|pulao|fried-rice/.test(d.id);
+  }
+
+  async function boot(){
+    const session = await requireSession();
+    if (!session) return;
+    mountUserBadge('userBadge');
+
+    diet = qs('diet'); cat = qs('cat');
+    const dishId = qs('dish');
+    if (!diet || !cat || !dishId) { window.location.href = 'select.html'; return; }
+
+    document.getElementById('crumbDishesLink').href = 'dishes.html?diet=' + diet + '&cat=' + cat;
+
+    const res = await fetch('data/dishes.json');
+    const data = await res.json();
+    const sub = data.categories[diet] && data.categories[diet].subcategories[cat];
+    dish = sub && sub.dishes.find(d => d.id === dishId);
+    if (!dish) { window.location.href = 'select.html'; return; }
+
+    document.getElementById('dishTitle').textContent = dish.name;
+    document.getElementById('recipeHero').style.backgroundImage =
+      "url('" + dish.image + "')";
+
+    people = dish.baseServings; // sensible default, changed by modal
+    openModal('modalAccompaniment');
+  }
+
+  function openModal(id){ document.getElementById(id).classList.add('show'); }
+  function closeModal(id){ document.getElementById(id).classList.remove('show'); }
+
+  // ---- Accompaniment modal ----
+  document.querySelectorAll('#modalAccompaniment .choice-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('#modalAccompaniment .choice-card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      accompaniment = card.dataset.value;
+      document.getElementById('btnAccompanimentNext').disabled = false;
+    });
+  });
+  document.getElementById('btnAccompanimentNext').addEventListener('click', () => {
+    closeModal('modalAccompaniment');
+    openModal('modalPeople');
+  });
+
+  // ---- People count modal ----
+  document.querySelectorAll('#peopleGrid .people-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('#peopleGrid .people-card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      people = parseInt(card.dataset.value, 10);
+      document.getElementById('btnPeopleNext').disabled = false;
+    });
+  });
+  document.getElementById('btnPeopleNext').addEventListener('click', () => {
+    closeModal('modalPeople');
+    document.getElementById('recipeContent').style.display = 'block';
+    renderRecipe();
+  });
+
+  // ---- Serving stepper (adjust after the fact) ----
+  document.getElementById('minusBtn').addEventListener('click', () => {
+    if (people > 1) { people--; renderRecipe(); }
+  });
+  document.getElementById('plusBtn').addEventListener('click', () => {
+    if (people < 12) { people++; renderRecipe(); }
+  });
+
+  function renderRecipe(){
+    const factor = people / dish.baseServings;
+
+    document.getElementById('servePill').textContent =
+      '🍽️ Serves ' + people + (people === 1 ? ' person' : ' people');
+    document.getElementById('peopleVal').textContent = people;
+    document.getElementById('minusBtn').disabled = people <= 1;
+    document.getElementById('plusBtn').disabled = people >= 12;
+    document.getElementById('baseNote').textContent =
+      'Recipe below is written for ' + dish.baseServings + ' and auto-scaled to ' + people +
+      (people === 1 ? ' person.' : ' people.');
+
+    const tag = document.getElementById('accompanimentTag');
+    if (isRiceDish(dish) && accompaniment === 'rice') {
+      tag.textContent = '🍚 Already a rice dish';
+    } else if (accompaniment === 'rice') {
+      tag.textContent = '🍚 Serving with rice';
+    } else {
+      tag.textContent = '🫓 Serving with chapathi';
+    }
+
+    const list = document.getElementById('ingredientList');
+    list.innerHTML = '';
+    dish.ingredients.forEach(ing => {
+      const li = document.createElement('li');
+      li.innerHTML =
+        '<span class="name">' + ing.item + (ing.note ? '<span class="note">' + ing.note + '</span>' : '') + '</span>' +
+        '<span class="qty">' + formatQty(ing.quantity, ing.unit, factor) + '</span>';
+      list.appendChild(li);
+    });
+
+    // Accompaniment as an extra scaled line item
+    if (!(isRiceDish(dish) && accompaniment === 'rice')) {
+      const li = document.createElement('li');
+      if (accompaniment === 'rice') {
+        li.innerHTML =
+          '<span class="name">Steamed rice<span class="note">raw rice, per person</span></span>' +
+          '<span class="qty">' + Math.round(75 * people) + ' g</span>';
+      } else {
+        li.innerHTML =
+          '<span class="name">Chapathi / Roti<span class="note">2 per person</span></span>' +
+          '<span class="qty">' + (2 * people) + ' pcs</span>';
+      }
+      list.appendChild(li);
+    }
+
+    const steps = document.getElementById('stepList');
+    steps.innerHTML = '';
+    dish.steps.forEach(step => {
+      const li = document.createElement('li');
+      li.className = 'step-item';
+      li.innerHTML =
+        '<div class="step-num"></div>' +
+        '<div class="step-text">' + step + '</div>';
+      steps.appendChild(li);
+    });
+    document.querySelectorAll('.step-num').forEach((el, i) => { el.textContent = i + 1; });
+  }
+
+  boot();
+</script>
+</body>
+</html>

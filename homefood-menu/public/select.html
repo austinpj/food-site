@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home Kitchen — What are you craving?</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="topnav">
+  <div class="container">
+    <div class="brand"><span class="mark">🍲</span> Home Kitchen</div>
+    <div class="nav-right">
+      <div class="nav-user" id="userBadge"></div>
+      <button class="btn btn-ghost" onclick="logout()">Log out</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero-band">
+  <div class="container">
+    <div class="hero-greeting" id="greeting">Good to see you</div>
+    <h1>What are you craving today?</h1>
+    <p class="lede">Choose Veg or Non-Veg to see the categories, then pick a dish — we'll walk you through the rest.</p>
+
+    <div class="diet-toggle">
+      <button class="diet-card" id="cardNonveg" data-diet="nonveg">
+        <img src="https://images.unsplash.com/photo-1771285119318-b342c3ecc51c?q=80&w=1600&auto=format&fit=crop" alt="Non-veg spread" />
+        <div class="diet-check">✓</div>
+        <div class="diet-card-body">
+          <span class="diet-badge nonveg">● Non-Veg</span>
+          <h3>Non-Vegetarian</h3>
+          <p>Chicken, beef, mutton, pork & fish</p>
+        </div>
+      </button>
+
+      <button class="diet-card" id="cardVeg" data-diet="veg">
+        <img src="https://images.unsplash.com/photo-1711153419402-336ee48f2138?q=80&w=1600&auto=format&fit=crop" alt="Veg spread" />
+        <div class="diet-check">✓</div>
+        <div class="diet-card-body">
+          <span class="diet-badge veg">● Veg</span>
+          <h3>Vegetarian</h3>
+          <p>Mushroom, gobi & mixed veg</p>
+        </div>
+      </button>
+    </div>
+
+    <div class="category-panel" id="categoryPanel">
+      <div class="category-panel-inner">
+        <h3 id="panelTitle">Choose a category</h3>
+        <p class="sub" id="panelSub">Pick one to see dishes.</p>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">Home Kitchen · Cooked with care</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  let dishData = null;
+
+  async function boot(){
+    const session = await requireSession();
+    if (!session) return;
+    mountUserBadge('userBadge');
+
+    const { data: { user } } = await window.sb.auth.getUser();
+    document.getElementById('greeting').textContent =
+      'Welcome, ' + displayNameFromEmail(user.email);
+
+    const res = await fetch('data/dishes.json');
+    dishData = await res.json();
+  }
+
+  const cardNonveg = document.getElementById('cardNonveg');
+  const cardVeg = document.getElementById('cardVeg');
+  const panel = document.getElementById('categoryPanel');
+  const panelTitle = document.getElementById('panelTitle');
+  const panelSub = document.getElementById('panelSub');
+  const grid = document.getElementById('categoryGrid');
+
+  function selectDiet(diet){
+    cardNonveg.classList.toggle('selected', diet === 'nonveg');
+    cardVeg.classList.toggle('selected', diet === 'veg');
+
+    const catData = dishData.categories[diet];
+    panelTitle.textContent = diet === 'veg' ? 'Vegetarian categories' : 'Non-Vegetarian categories';
+    panelSub.textContent = 'Click a category to browse dishes.';
+
+    grid.innerHTML = '';
+    Object.entries(catData.subcategories).forEach(([key, sub]) => {
+      const btn = document.createElement('button');
+      btn.className = 'category-tab';
+      btn.innerHTML =
+        '<div class="thumb"><img src="' + sub.image + '" alt="' + sub.label + '" loading="lazy"/></div>' +
+        '<span class="label">' + sub.label + '</span>' +
+        '<span class="count">' + sub.dishes.length + ' dishes</span>';
+      btn.addEventListener('click', () => {
+        window.location.href = 'dishes.html?diet=' + diet + '&cat=' + key;
+      });
+      grid.appendChild(btn);
+    });
+
+    panel.classList.add('open');
+    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 120);
+  }
+
+  cardNonveg.addEventListener('click', () => selectDiet('nonveg'));
+  cardVeg.addEventListener('click', () => selectDiet('veg'));
+
+  boot();
+</script>
+</body>
+</html>

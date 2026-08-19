@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home Kitchen — Dishes</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="topnav">
+  <div class="container">
+    <div class="brand"><span class="mark">🍲</span> Home Kitchen</div>
+    <div class="nav-right">
+      <div class="nav-user" id="userBadge"></div>
+      <button class="btn btn-ghost" onclick="logout()">Log out</button>
+    </div>
+  </div>
+</header>
+
+<div class="container page-head">
+  <div class="crumb">
+    <a href="select.html" class="link-back">← Categories</a>
+    <span class="sep">/</span>
+    <span id="crumbCat">—</span>
+  </div>
+  <h1 id="catTitle">Dishes</h1>
+  <p id="catSub" style="max-width:560px;"></p>
+</div>
+
+<div class="container">
+  <div class="dish-grid" id="dishGrid">
+    <div class="loading-state" style="grid-column:1/-1;">
+      <div class="spinner"></div>
+      <span>Loading dishes…</span>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">Home Kitchen · Cooked with care</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  function qs(name){ return new URLSearchParams(window.location.search).get(name); }
+
+  async function boot(){
+    const session = await requireSession();
+    if (!session) return;
+    mountUserBadge('userBadge');
+
+    const diet = qs('diet');
+    const cat = qs('cat');
+    if (!diet || !cat) { window.location.href = 'select.html'; return; }
+
+    const res = await fetch('data/dishes.json');
+    const data = await res.json();
+
+    const catData = data.categories[diet];
+    const sub = catData && catData.subcategories[cat];
+    if (!sub) { window.location.href = 'select.html'; return; }
+
+    document.getElementById('crumbCat').textContent = sub.label;
+    document.getElementById('catTitle').textContent = sub.label + ' dishes';
+    document.getElementById('catSub').textContent =
+      'Pick a dish to see the full recipe, sized exactly for how many people you\'re feeding.';
+
+    const grid = document.getElementById('dishGrid');
+    grid.innerHTML = '';
+    sub.dishes.forEach(dish => {
+      const card = document.createElement('a');
+      card.href = 'recipe.html?diet=' + diet + '&cat=' + cat + '&dish=' + dish.id;
+      card.className = 'dish-card fade-in';
+      card.innerHTML =
+        '<div class="photo">' +
+          '<img src="' + dish.image + '" alt="' + dish.name + '" loading="lazy" onerror="this.src=\'' + sub.image + '\'"/>' +
+          '<div class="diet-dot ' + diet + '"><i></i></div>' +
+        '</div>' +
+        '<div class="info">' +
+          '<h3>' + dish.name + '</h3>' +
+          '<div class="meta">Serves ' + dish.baseServings + ' at base — scaled to your group</div>' +
+          '<div class="cta">View recipe <span>→</span></div>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+  }
+
+  boot();
+</script>
+</body>
+</html>

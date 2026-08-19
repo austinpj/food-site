@@ -1,0 +1,1156 @@
+{
+  "categories": {
+    "nonveg": {
+      "label": "Non-Veg",
+      "heroImage": "https://images.unsplash.com/photo-1771285119318-b342c3ecc51c?q=80&w=1600&auto=format&fit=crop",
+      "subcategories": {
+        "chicken": {
+          "label": "Chicken",
+          "image": "https://images.unsplash.com/photo-1762922425226-8cfe6987e7b0?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "chicken-biryani",
+              "name": "Chicken Biryani",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyderabadi_Chicken_Biryani.jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Chicken, bone-in curry cut", "quantity": 500, "unit": "g"},
+                {"item": "Plain yogurt (for marinade)", "quantity": 45, "unit": "ml"},
+                {"item": "Ginger-garlic paste", "quantity": 20, "unit": "g", "note": "divided"},
+                {"item": "Salt", "quantity": 8, "unit": "g", "note": "divided, to taste"},
+                {"item": "Turmeric powder", "quantity": 1.5, "unit": "tsp", "note": "divided"},
+                {"item": "Red chili powder", "quantity": 2, "unit": "tsp", "note": "divided"},
+                {"item": "Garam masala or biryani masala", "quantity": 2.5, "unit": "tsp", "note": "divided"},
+                {"item": "Lemon juice", "quantity": 15, "unit": "ml"},
+                {"item": "Bay leaf", "quantity": 1, "unit": "pcs"},
+                {"item": "Green cardamom", "quantity": 4, "unit": "pcs"},
+                {"item": "Cloves", "quantity": 6, "unit": "pcs"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "1-inch piece"},
+                {"item": "Star anise", "quantity": 1, "unit": "pcs"},
+                {"item": "Shahi jeera or cumin seeds", "quantity": 0.75, "unit": "tsp"},
+                {"item": "Basmati rice", "quantity": 400, "unit": "g", "note": "aged, rinsed and soaked 30 min"},
+                {"item": "Ghee or oil", "quantity": 30, "unit": "ml"},
+                {"item": "Onion, thinly sliced", "quantity": 150, "unit": "g", "note": "1 large"},
+                {"item": "Mint leaves, chopped", "quantity": 20, "unit": "g", "note": "divided"},
+                {"item": "Green chili, slit", "quantity": 1, "unit": "pcs"},
+                {"item": "Plain yogurt (for cooking)", "quantity": 60, "unit": "ml"},
+                {"item": "Water", "quantity": 700, "unit": "ml", "note": "for cooking rice"},
+                {"item": "Fried onions", "quantity": 15, "unit": "g", "note": "optional, for garnish"},
+                {"item": "Saffron strands", "quantity": 0.1, "unit": "g", "note": "optional, soaked in 30 ml warm milk"}
+              ],
+              "steps": [
+                "Marinate the chicken with 45 ml yogurt, half the ginger-garlic paste, salt, half the turmeric, half the red chili powder, 1 tsp garam masala and lemon juice. Cover and refrigerate for at least 1 hour (or overnight).",
+                "Rinse the basmati rice until the water runs clear, then soak for 30 minutes and drain well.",
+                "Heat ghee in a heavy-bottomed pot. Add the bay leaf, cardamom, cloves, cinnamon, star anise and shahi jeera; fry until fragrant, then add the sliced onion and cook until golden brown.",
+                "Add the marinated chicken and saute on medium heat for 5 minutes, then cover and cook on low heat until the chicken is nearly tender.",
+                "Stir in the remaining yogurt, remaining garam masala, remaining chili powder, green chili and half the mint leaves; cook 2-3 minutes until well combined and slightly thickened.",
+                "Spread the drained rice evenly over the chicken layer without mixing.",
+                "Bring the measured water to a rolling boil with the remaining salt, then pour gently over the rice. Scatter the remaining mint, fried onions and saffron milk on top.",
+                "Cover tightly with a lid (seal the edges with dough or foil if needed) and cook on low heat for 15-18 minutes until the rice is fully cooked. Turn off the heat and let it rest, covered, for 10-15 minutes.",
+                "Gently fluff the rice, mixing lightly from the bottom to bring up the chicken, and serve hot with raita."
+              ]
+            },
+            {
+              "id": "chicken-curry",
+              "name": "Chicken Curry",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken_curry.jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Chicken, bone-in curry cut", "quantity": 650, "unit": "g"},
+                {"item": "Oil", "quantity": 45, "unit": "ml"},
+                {"item": "Onions, finely chopped", "quantity": 200, "unit": "g", "note": "about 2 medium"},
+                {"item": "Green chilies, slit", "quantity": 2, "unit": "pcs"},
+                {"item": "Ginger-garlic paste", "quantity": 20, "unit": "g"},
+                {"item": "Tomatoes, pureed", "quantity": 160, "unit": "g", "note": "about 2 medium"},
+                {"item": "Plain yogurt", "quantity": 80, "unit": "ml"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Kashmiri red chili powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Garam masala", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Salt", "quantity": 5, "unit": "g", "note": "to taste"},
+                {"item": "Bay leaf", "quantity": 1, "unit": "pcs"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "2-inch piece"},
+                {"item": "Cloves", "quantity": 5, "unit": "pcs"},
+                {"item": "Green cardamom", "quantity": 3, "unit": "pcs"},
+                {"item": "Hot water", "quantity": 250, "unit": "ml"},
+                {"item": "Fresh coriander leaves, chopped", "quantity": 10, "unit": "g", "note": "for garnish"}
+              ],
+              "steps": [
+                "Heat oil in a heavy pan and add the bay leaf, cinnamon, cloves and cardamom; fry until fragrant.",
+                "Add the chopped onions and green chilies; saute on medium heat for 7-8 minutes until deep golden brown.",
+                "Add the ginger-garlic paste and cook for about 1 minute until aromatic.",
+                "Add the tomatoes, turmeric and salt; cook until the tomatoes turn soft and mushy.",
+                "Reduce the heat and stir in the yogurt, red chili powder, coriander powder and garam masala; cook for 2-3 minutes until the oil begins to separate.",
+                "Add the chicken and half the coriander leaves; fry on medium heat for 3 minutes until the chicken turns pale on the outside.",
+                "Cover and cook on low heat for 3-4 minutes, then add the hot water, cover again and cook until the chicken is tender, stirring occasionally.",
+                "Uncover and simmer briefly to adjust the gravy consistency; taste and adjust salt and garam masala.",
+                "Garnish with the remaining coriander leaves and serve hot with rice, naan or chapati."
+              ]
+            },
+            {
+              "id": "chicken-grill",
+              "name": "Chicken Grill",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grilled_Chicken_Breasts_(28905381261).jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Chicken thighs, boneless skinless", "quantity": 900, "unit": "g"},
+                {"item": "Garlic, minced", "quantity": 4, "unit": "cloves"},
+                {"item": "Olive oil", "quantity": 60, "unit": "ml"},
+                {"item": "Soy sauce", "quantity": 60, "unit": "ml"},
+                {"item": "Brown sugar, packed", "quantity": 55, "unit": "g"},
+                {"item": "Apple cider vinegar", "quantity": 30, "unit": "ml"},
+                {"item": "Dijon mustard", "quantity": 15, "unit": "g"},
+                {"item": "Ground cumin", "quantity": 1, "unit": "tsp"},
+                {"item": "Paprika, smoked or regular", "quantity": 1, "unit": "tsp"},
+                {"item": "Salt", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Black pepper, freshly ground", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Fresh cilantro or parsley, chopped", "quantity": 5, "unit": "g", "note": "optional, for garnish"}
+              ],
+              "steps": [
+                "Whisk together the garlic, olive oil, soy sauce, brown sugar, vinegar, mustard, cumin, paprika, salt and pepper in a bowl to make the marinade.",
+                "Pat the chicken thighs dry and place them in a large zip-top bag or dish. Pour in the marinade, seal, and massage to coat evenly.",
+                "Refrigerate for at least 2 hours, or up to overnight, turning once halfway through.",
+                "Heat an outdoor grill (or grill pan) to direct, medium-high heat, about 230-260C, and clean the grates well.",
+                "Remove the chicken from the marinade, letting excess drip off, and place smooth-side down on the grill with space between pieces.",
+                "Cover and grill for 4-5 minutes until good grill marks form, then flip and cover again.",
+                "Grill for another 4-5 minutes until the thickest part of the chicken reaches an internal temperature of 74C (165F).",
+                "Transfer to a plate, rest for 5 minutes, then garnish with fresh herbs and serve."
+              ]
+            },
+            {
+              "id": "chicken-fried-rice",
+              "name": "Chicken Fried Rice",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Fried_Rice.JPG",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Cooked white rice, chilled", "quantity": 600, "unit": "g", "note": "preferably day-old"},
+                {"item": "Chicken breast, diced small", "quantity": 300, "unit": "g"},
+                {"item": "Eggs, lightly beaten", "quantity": 2, "unit": "pcs"},
+                {"item": "Garlic, minced", "quantity": 3, "unit": "cloves"},
+                {"item": "Onion, finely chopped", "quantity": 80, "unit": "g"},
+                {"item": "Carrot, diced small", "quantity": 60, "unit": "g"},
+                {"item": "Frozen peas", "quantity": 60, "unit": "g"},
+                {"item": "Frozen corn kernels", "quantity": 60, "unit": "g"},
+                {"item": "Spring onion, sliced", "quantity": 20, "unit": "g", "note": "divided"},
+                {"item": "Vegetable oil", "quantity": 45, "unit": "ml", "note": "divided"},
+                {"item": "Light soy sauce", "quantity": 45, "unit": "ml"},
+                {"item": "Oyster sauce", "quantity": 15, "unit": "ml"},
+                {"item": "Shaoxing wine or mirin", "quantity": 30, "unit": "ml"},
+                {"item": "Sesame oil", "quantity": 0.5, "unit": "tsp"},
+                {"item": "White pepper", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Salt", "quantity": 2, "unit": "g", "note": "to taste"}
+              ],
+              "steps": [
+                "In a small bowl, mix the soy sauce, oyster sauce, Shaoxing wine, sesame oil and white pepper to make the sauce. Toss 2 teaspoons of it with the diced chicken and set aside for 10 minutes.",
+                "Heat 1 tablespoon of oil in a wok over medium-high heat. Pour in the beaten eggs, scramble until just set, then remove and set aside.",
+                "Add the remaining oil to the wok. Add the onion and garlic and stir-fry for about 1 minute until fragrant.",
+                "Add the carrot, peas and corn; stir-fry for 1-2 minutes until just tender.",
+                "Add the marinated chicken and stir-fry for 2-3 minutes until cooked through and lightly browned.",
+                "Add the cold rice, breaking up any clumps, and pour in the remaining sauce. Stir-fry for 2 minutes, tossing constantly, until the rice is evenly coated and heated through.",
+                "Return the scrambled egg to the wok along with most of the spring onion; toss to combine and adjust salt to taste.",
+                "Remove from heat, garnish with the remaining spring onion, and serve immediately."
+              ]
+            },
+            {
+              "id": "garlic-butter-chicken",
+              "name": "Garlic Butter Chicken",
+              "image": "https://www.wholesomeyum.com/wp-content/uploads/2022/12/wholesomeyum-Garlic-Butter-Chicken-1.jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Chicken breasts, boneless skinless", "quantity": 4, "unit": "pcs", "note": "about 225 g each"},
+                {"item": "Sea salt", "quantity": 2, "unit": "tsp"},
+                {"item": "Black pepper", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Dried thyme", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Dried oregano", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Dried rosemary, crushed", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Dried parsley", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Olive oil", "quantity": 15, "unit": "ml"},
+                {"item": "Unsalted butter", "quantity": 45, "unit": "g"},
+                {"item": "Chicken broth", "quantity": 120, "unit": "ml"},
+                {"item": "Garlic, minced", "quantity": 5, "unit": "cloves"},
+                {"item": "Fresh parsley, chopped", "quantity": 5, "unit": "g", "note": "optional, for garnish"}
+              ],
+              "steps": [
+                "Pat the chicken breasts dry with paper towels. Season both sides generously with the salt, pepper, thyme, oregano, rosemary and dried parsley.",
+                "Heat the olive oil in a large skillet over medium-high heat. Add the chicken in a single layer and sear for 4-8 minutes per side until golden brown and cooked through (internal temperature 74C/165F).",
+                "Transfer the chicken to a plate and cover loosely to keep warm.",
+                "Add the butter and chicken broth to the same skillet, scraping up the browned bits from the bottom with a wooden spoon.",
+                "Reduce the heat to low, add the minced garlic, and saute for about 1 minute until fragrant.",
+                "Return the chicken to the skillet, spooning the garlic butter sauce over each piece, and warm through for 1-2 minutes.",
+                "Garnish with fresh parsley and serve with the pan sauce spooned on top."
+              ]
+            }
+          ]
+        },
+        "beef": {
+          "label": "Beef",
+          "image": "https://images.unsplash.com/photo-1519699788450-ad34386a3bfc?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "beef-biryani",
+              "name": "Beef Biryani",
+              "image": "https://images.unsplash.com/photo-1566749249285-1798d7a0e470?auto=format&fit=crop&w=1200&q=80",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Beef, cubed", "quantity": 300, "unit": "g", "note": "stewing cuts like shin or chuck"},
+                {"item": "Basmati rice", "quantity": 250, "unit": "g", "note": "soaked 30 minutes, drained"},
+                {"item": "Onion", "quantity": 100, "unit": "g", "note": "thinly sliced"},
+                {"item": "Ginger-garlic paste", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Tomato", "quantity": 100, "unit": "g", "note": "chopped"},
+                {"item": "Plain yogurt", "quantity": 60, "unit": "ml"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "small piece"},
+                {"item": "Green cardamom pods", "quantity": 2, "unit": "pcs"},
+                {"item": "Black peppercorns", "quantity": 3, "unit": "pcs"},
+                {"item": "Cloves", "quantity": 1, "unit": "pcs"},
+                {"item": "Biryani masala powder", "quantity": 2, "unit": "tbsp"},
+                {"item": "Cooking oil", "quantity": 1.5, "unit": "tbsp", "note": "for the beef masala"},
+                {"item": "Water", "quantity": 240, "unit": "ml", "note": "for cooking the beef masala"},
+                {"item": "Potato", "quantity": 100, "unit": "g", "note": "cubed"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "to taste, divided"},
+                {"item": "Cumin seeds", "quantity": 0.5, "unit": "tsp", "note": "for the rice"},
+                {"item": "Lemon slices", "quantity": 2, "unit": "pcs"},
+                {"item": "Mint leaves", "quantity": 5, "unit": "g"},
+                {"item": "Oil", "quantity": 1, "unit": "tbsp", "note": "for the rice water"},
+                {"item": "Milk", "quantity": 30, "unit": "ml", "note": "for the color mixture"},
+                {"item": "Yellow food coloring", "quantity": 3, "unit": "drops", "note": "optional"},
+                {"item": "Coriander leaves", "quantity": 10, "unit": "g", "note": "chopped, for layering and garnish"},
+                {"item": "Ghee", "quantity": 1, "unit": "tbsp", "note": "melted, for drizzling"}
+              ],
+              "steps": [
+                "Heat the oil in a heavy-bottomed pot and fry the sliced onion until golden brown.",
+                "Add the beef and ginger-garlic paste and cook, stirring, until the beef changes color.",
+                "Stir in the tomato, yogurt, whole spices (cinnamon, cardamom, peppercorns, cloves) and biryani masala; cook for 5-7 minutes until fragrant.",
+                "Add the water and half the salt, cover, and simmer (or pressure cook) until the beef is tender; add the potato and cook uncovered until the gravy thickens and oil separates.",
+                "Meanwhile, bring a pot of water to the boil with the cumin seeds, a lemon slice, mint, remaining salt and the tablespoon of oil; add the drained rice and parboil until three-quarters cooked, then drain.",
+                "Spread half the parboiled rice over the beef masala in the pot, then scatter over half the coriander and a lemon slice.",
+                "Top with the remaining rice, drizzle over the milk mixed with food coloring and the melted ghee, then scatter the rest of the coriander.",
+                "Cover tightly and cook on very low heat (dum) for 8-10 minutes, then rest off the heat for 5 minutes before gently folding the layers together and serving with raita."
+              ]
+            },
+            {
+              "id": "beef-curry",
+              "name": "Beef Curry",
+              "image": "https://images.unsplash.com/photo-1694579740719-0e601c5d2437?auto=format&fit=crop&w=1200&q=80",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Beef", "quantity": 600, "unit": "g", "note": "cut into cubes"},
+                {"item": "Onion", "quantity": 300, "unit": "g", "note": "finely chopped"},
+                {"item": "Tomato", "quantity": 300, "unit": "g", "note": "chopped"},
+                {"item": "Garlic paste", "quantity": 2, "unit": "tbsp"},
+                {"item": "Ginger paste", "quantity": 1, "unit": "tbsp", "note": "for the marinade"},
+                {"item": "Cooking oil", "quantity": 4, "unit": "tbsp"},
+                {"item": "Cooking oil", "quantity": 1, "unit": "tsp", "note": "for the marinade"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "for the marinade"},
+                {"item": "Water", "quantity": 480, "unit": "ml"},
+                {"item": "Chilli powder", "quantity": 0.5, "unit": "tsp", "note": "for the marinade"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp", "note": "for the marinade"},
+                {"item": "Garam masala", "quantity": 0.5, "unit": "tsp", "note": "for the marinade"},
+                {"item": "Chilli powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Garam masala", "quantity": 1, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs"},
+                {"item": "Bay leaves", "quantity": 4, "unit": "pcs"},
+                {"item": "Cumin seeds", "quantity": 1, "unit": "tsp"},
+                {"item": "Coriander leaves", "quantity": 10, "unit": "g", "note": "chopped, for garnish"}
+              ],
+              "steps": [
+                "Cut the beef into uniform cubes and mix with the marinade ingredients (chilli powder, turmeric, garam masala, ginger paste, oil and salt); let it sit for 15 minutes.",
+                "Heat the oil in a heavy-bottomed pot over medium heat and toast the cumin seeds, cinnamon stick and bay leaves for a few seconds until fragrant.",
+                "Add the onion and cook until translucent, then stir in the garlic paste and saute briefly until golden.",
+                "Add the tomato and cook until it softens and breaks down.",
+                "Add the marinated beef along with the remaining chilli powder, turmeric, coriander powder and garam masala; stir well and cook for 1-2 minutes.",
+                "Pour in the water and salt, bring to a boil, then reduce the heat to low, cover and simmer for about 1 hour until the beef is tender, stirring occasionally and topping up water if needed.",
+                "Taste and adjust the seasoning.",
+                "Stir in the fresh coriander and serve hot with rice, naan or chapati."
+              ]
+            },
+            {
+              "id": "beef-grill",
+              "name": "Beef Grill",
+              "image": "https://images.unsplash.com/photo-1570481060336-9c82d078588e?auto=format&fit=crop&w=1200&q=80",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Beef steaks", "quantity": 700, "unit": "g", "note": "4 steaks, such as ribeye or sirloin"},
+                {"item": "Olive oil", "quantity": 120, "unit": "ml"},
+                {"item": "Red wine vinegar", "quantity": 60, "unit": "ml"},
+                {"item": "Honey", "quantity": 60, "unit": "ml"},
+                {"item": "Worcestershire sauce", "quantity": 30, "unit": "ml"},
+                {"item": "Black pepper", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Red pepper flakes", "quantity": 1, "unit": "tsp"},
+                {"item": "Fresh thyme", "quantity": 5, "unit": "sprigs"},
+                {"item": "Garlic", "quantity": 5, "unit": "cloves", "note": "minced"}
+              ],
+              "steps": [
+                "In a bowl or zip-top bag, whisk together the olive oil, red wine vinegar, honey, Worcestershire sauce, black pepper, salt, red pepper flakes, thyme and minced garlic.",
+                "Add the steaks and turn to coat all sides evenly in the marinade.",
+                "Refrigerate for 4-8 hours, giving thinner steaks the shorter end of the range and thicker cuts the longer end.",
+                "Remove the steaks from the fridge 20-30 minutes before cooking, and preheat the grill to high heat.",
+                "Take the steaks out of the marinade, pat off excess liquid, and discard the used marinade.",
+                "Grill the steaks over high heat for 3-5 minutes per side, until well charred on the outside and about 5C below your target internal temperature.",
+                "Transfer to a plate, tent loosely with foil, and rest for 5 minutes.",
+                "Slice against the grain if desired and serve hot."
+              ]
+            },
+            {
+              "id": "beef-dry-fry",
+              "name": "Beef Dry Fry",
+              "image": "https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?auto=format&fit=crop&w=1200&q=80",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Beef", "quantity": 600, "unit": "g", "note": "cut into small bite-sized pieces"},
+                {"item": "Fennel seeds", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Black peppercorns", "quantity": 8, "unit": "pcs"},
+                {"item": "Green cardamom pods", "quantity": 3, "unit": "pcs"},
+                {"item": "Cloves", "quantity": 3, "unit": "pcs"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "small piece"},
+                {"item": "Star anise", "quantity": 1, "unit": "pcs"},
+                {"item": "Cumin seeds", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Onion", "quantity": 200, "unit": "g", "note": "sliced"},
+                {"item": "Ginger", "quantity": 1, "unit": "tbsp", "note": "chopped"},
+                {"item": "Garlic", "quantity": 1, "unit": "tbsp", "note": "chopped"},
+                {"item": "Green chilies", "quantity": 3, "unit": "pcs", "note": "slit lengthwise"},
+                {"item": "Fresh coconut", "quantity": 50, "unit": "g", "note": "cut into small bits"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 3, "unit": "tsp"},
+                {"item": "Shallots (pearl onions)", "quantity": 10, "unit": "pcs", "note": "sliced"},
+                {"item": "Curry leaves", "quantity": 2, "unit": "sprigs"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp", "note": "to taste"},
+                {"item": "Coconut oil", "quantity": 3, "unit": "tbsp"},
+                {"item": "Water", "quantity": 120, "unit": "ml", "note": "for pressure cooking"}
+              ],
+              "steps": [
+                "Dry roast the fennel seeds, peppercorns, cardamom, cloves, cinnamon, star anise and cumin seeds for 3-4 minutes until aromatic; cool and grind to a coarse powder.",
+                "In a pressure cooker, combine the beef with the ground spice mix, turmeric, coriander powder, sliced onion, ginger, garlic, green chilies, coconut bits, curry leaves and salt.",
+                "Add the water, mix well, and pressure cook until the beef is tender (about 4-5 whistles, simmering longer if needed).",
+                "Heat the coconut oil in a wide, heavy pan and fry the sliced shallots and a few curry leaves until lightly browned.",
+                "Add the cooked beef along with its cooking liquid and bring to a boil.",
+                "Simmer uncovered, stirring occasionally, until the liquid reduces and the beef starts to darken and dry out, about 15-20 minutes.",
+                "Raise the heat for the last few minutes and stir frequently to get a slightly charred, roasted finish without burning.",
+                "Serve hot as a side with rice, appam or porotta."
+              ]
+            },
+            {
+              "id": "garlic-butter-steak-bites",
+              "name": "Easy Garlic Butter Steak Bites",
+              "image": "https://images.unsplash.com/photo-1579636858731-24857b3f4305?auto=format&fit=crop&w=1200&q=80",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Sirloin steak", "quantity": 450, "unit": "g", "note": "diced into 2.5cm pieces"},
+                {"item": "Sea salt", "quantity": 1, "unit": "tsp"},
+                {"item": "Black pepper", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Olive oil", "quantity": 15, "unit": "ml"},
+                {"item": "Unsalted butter", "quantity": 60, "unit": "g"},
+                {"item": "Garlic", "quantity": 4, "unit": "cloves", "note": "minced"},
+                {"item": "Fresh parsley", "quantity": 8, "unit": "g", "note": "chopped"}
+              ],
+              "steps": [
+                "Pat the diced steak dry with paper towels, then season all over with the salt and pepper.",
+                "Heat the olive oil in a large cast-iron or heavy skillet over medium-high heat until shimmering.",
+                "Add the steak bites in a single layer, working in batches if needed to avoid crowding the pan.",
+                "Sear for 4-5 minutes total, flipping every 1-2 minutes, until browned on all sides and cooked to your desired doneness.",
+                "Reduce the heat to low and add the butter, letting it melt around the steak.",
+                "Stir in the minced garlic and cook for about 1 minute until fragrant, being careful not to let it burn.",
+                "Add the chopped parsley and toss the steak bites to coat them in the garlic butter sauce.",
+                "Remove from the pan immediately to prevent overcooking, and serve hot."
+              ]
+            }
+          ]
+        },
+        "mutton": {
+          "label": "Mutton",
+          "image": "https://images.unsplash.com/photo-1606843046080-45bf7a23c39f?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "mutton-biryani",
+              "name": "Mutton Biryani",
+              "image": "https://images.unsplash.com/photo-1752673508949-f4aeeaef75f0?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Mutton, bone-in curry cut", "quantity": 600, "unit": "g"},
+                {"item": "Basmati rice", "quantity": 400, "unit": "g"},
+                {"item": "Yogurt (curd)", "quantity": 200, "unit": "g"},
+                {"item": "Onions, thinly sliced and deep-fried", "quantity": 200, "unit": "g", "note": "birista"},
+                {"item": "Ginger-garlic paste", "quantity": 30, "unit": "g"},
+                {"item": "Green chilies", "quantity": 4, "unit": "pcs", "note": "slit"},
+                {"item": "Red chili powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Garam masala powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Mint leaves", "quantity": 20, "unit": "g", "note": "chopped"},
+                {"item": "Coriander leaves", "quantity": 20, "unit": "g", "note": "chopped"},
+                {"item": "Lemon juice", "quantity": 2, "unit": "tbsp"},
+                {"item": "Ghee", "quantity": 60, "unit": "g"},
+                {"item": "Cooking oil", "quantity": 2, "unit": "tbsp"},
+                {"item": "Bay leaf", "quantity": 2, "unit": "pcs"},
+                {"item": "Cinnamon stick", "quantity": 2, "unit": "pcs"},
+                {"item": "Cloves", "quantity": 6, "unit": "pcs"},
+                {"item": "Green cardamom", "quantity": 6, "unit": "pcs"},
+                {"item": "Shahi jeera (caraway/cumin)", "quantity": 1, "unit": "tsp"},
+                {"item": "Salt", "quantity": 2, "unit": "tsp", "note": "to taste"},
+                {"item": "Saffron strands", "quantity": 0.5, "unit": "g", "note": "soaked in 50 ml warm milk"},
+                {"item": "Water", "quantity": 2000, "unit": "ml", "note": "for boiling rice"}
+              ],
+              "steps": [
+                "Marinate the mutton with yogurt, ginger-garlic paste, red chili powder, turmeric, half the garam masala, salt, lemon juice, half the fried onions, and half the mint and coriander leaves. Cover and refrigerate for at least 2 hours, ideally overnight.",
+                "Soak the basmati rice in water for 30 minutes. Bring a large pot of salted water to a boil with the bay leaf, cinnamon, cloves, cardamom and shahi jeera, then add the drained rice and boil until about 70% cooked. Drain.",
+                "Heat a heavy-bottomed pot with a little ghee and spread the marinated mutton evenly across the bottom.",
+                "Spread the partially cooked rice evenly over the mutton in a layer.",
+                "Top the rice with the remaining fried onions, mint, coriander leaves, saffron milk, and a generous drizzle of ghee.",
+                "Cover tightly with foil and a lid to seal in the steam (dum). Cook on high heat for 5 minutes, then reduce to the lowest heat and cook for 45-50 minutes.",
+                "Turn off the heat and let the pot rest, still covered, for 10 minutes.",
+                "Open the lid and gently fold the biryani from bottom to top so the rice and mutton layers combine without mashing the rice. Serve hot with raita."
+              ]
+            },
+            {
+              "id": "mutton-curry",
+              "name": "Mutton Curry",
+              "image": "https://images.unsplash.com/photo-1606843046080-45bf7a23c39f?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Mutton, bone-in", "quantity": 600, "unit": "g"},
+                {"item": "Onions, finely sliced", "quantity": 250, "unit": "g"},
+                {"item": "Tomatoes, pureed", "quantity": 200, "unit": "g"},
+                {"item": "Yogurt", "quantity": 100, "unit": "g"},
+                {"item": "Ginger-garlic paste", "quantity": 25, "unit": "g"},
+                {"item": "Green chilies", "quantity": 2, "unit": "pcs", "note": "slit"},
+                {"item": "Red chili powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 2, "unit": "tsp"},
+                {"item": "Cumin powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Garam masala powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Bay leaf", "quantity": 1, "unit": "pcs"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs"},
+                {"item": "Cloves", "quantity": 4, "unit": "pcs"},
+                {"item": "Green cardamom", "quantity": 3, "unit": "pcs"},
+                {"item": "Cooking oil", "quantity": 60, "unit": "ml"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp", "note": "to taste"},
+                {"item": "Coriander leaves", "quantity": 15, "unit": "g", "note": "chopped, for garnish"},
+                {"item": "Water", "quantity": 400, "unit": "ml"}
+              ],
+              "steps": [
+                "Heat oil in a pressure cooker or heavy pot. Add the bay leaf, cinnamon, cloves and cardamom, and saute for about 30 seconds until fragrant.",
+                "Add the sliced onions and cook over medium heat, stirring often, until deep golden brown, about 10-12 minutes.",
+                "Add the ginger-garlic paste and green chilies, and saute for 1-2 minutes until the raw smell disappears.",
+                "Add the mutton pieces and sear on high heat for 5-7 minutes, turning occasionally, until browned on the outside.",
+                "Add the turmeric, red chili powder, coriander powder, cumin powder and salt. Mix well and cook for 2 minutes.",
+                "Add the tomato puree and yogurt, and cook, stirring, until the oil begins to separate from the masala, about 8-10 minutes.",
+                "Add the water, cover and pressure cook for 5-6 whistles (or simmer covered for 45-60 minutes) until the mutton is fully tender.",
+                "Open the lid, stir in the garam masala, adjust salt, and simmer uncovered for 5 more minutes to thicken the gravy slightly.",
+                "Garnish with chopped coriander leaves and serve hot with rice or roti."
+              ]
+            },
+            {
+              "id": "mutton-sukka",
+              "name": "Mutton Sukka",
+              "image": "https://plus.unsplash.com/premium_photo-1667545932065-59f39c3c4f2c?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Mutton, small bone-in pieces", "quantity": 600, "unit": "g"},
+                {"item": "Onion, finely chopped", "quantity": 150, "unit": "g"},
+                {"item": "Tomato, chopped", "quantity": 100, "unit": "g"},
+                {"item": "Ginger-garlic paste", "quantity": 20, "unit": "g"},
+                {"item": "Fresh grated coconut", "quantity": 80, "unit": "g"},
+                {"item": "Coriander seeds", "quantity": 2, "unit": "tbsp"},
+                {"item": "Dried red chilies (Byadgi/Kashmiri)", "quantity": 6, "unit": "pcs"},
+                {"item": "Black peppercorns", "quantity": 1, "unit": "tsp"},
+                {"item": "Cumin seeds", "quantity": 1, "unit": "tsp"},
+                {"item": "Fennel seeds", "quantity": 1, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Curry leaves", "quantity": 2, "unit": "sprigs"},
+                {"item": "Tamarind", "quantity": 10, "unit": "g", "note": "or 1 tsp tamarind paste"},
+                {"item": "Coconut oil", "quantity": 45, "unit": "ml"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp", "note": "to taste"},
+                {"item": "Water", "quantity": 150, "unit": "ml"}
+              ],
+              "steps": [
+                "Pressure cook the mutton with turmeric, half the salt and 150 ml water until tender, about 4-5 whistles. Reserve the mutton and the stock separately.",
+                "Dry roast the coriander seeds, dried red chilies, peppercorns, cumin seeds and fennel seeds until aromatic, about 2-3 minutes. Cool, then grind with the grated coconut and a splash of water into a coarse masala paste.",
+                "Heat the coconut oil in a heavy kadai. Add the curry leaves and let them splutter.",
+                "Add the chopped onion and saute over medium heat until golden brown, about 6-8 minutes.",
+                "Add the ginger-garlic paste and saute for 1-2 minutes until the raw smell disappears.",
+                "Add the chopped tomato and tamarind, and cook until the tomato turns soft and mushy, about 4-5 minutes.",
+                "Add the ground coconut-spice masala and cook on low heat, stirring often, until it darkens and the oil begins to separate, about 8-10 minutes.",
+                "Add the cooked mutton along with a little of the reserved stock, and the remaining salt. Mix well to coat the pieces.",
+                "Cook uncovered over medium-low heat, stirring occasionally, until most of the liquid evaporates and the masala clings dry to the mutton, about 15-20 minutes. Serve hot."
+              ]
+            },
+            {
+              "id": "mutton-pepper-fry",
+              "name": "Mutton Pepper Fry",
+              "image": "https://images.unsplash.com/photo-1736239092878-95523f1b1d25?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Mutton, small bone-in pieces", "quantity": 600, "unit": "g"},
+                {"item": "Shallots (small onions), sliced", "quantity": 150, "unit": "g"},
+                {"item": "Ginger, julienned", "quantity": 20, "unit": "g"},
+                {"item": "Garlic, sliced", "quantity": 20, "unit": "g", "note": "about 6-8 cloves"},
+                {"item": "Curry leaves", "quantity": 3, "unit": "sprigs"},
+                {"item": "Black pepper, coarsely crushed", "quantity": 2.5, "unit": "tbsp", "note": "divided"},
+                {"item": "Coriander powder", "quantity": 2, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Fennel powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Garam masala powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Green chilies", "quantity": 3, "unit": "pcs", "note": "slit"},
+                {"item": "Coconut oil", "quantity": 45, "unit": "ml"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp", "note": "to taste"},
+                {"item": "Water", "quantity": 150, "unit": "ml"}
+              ],
+              "steps": [
+                "Marinate the mutton with the turmeric, half the crushed black pepper, coriander powder, salt and a splash of water. Set aside for 20-30 minutes.",
+                "Pressure cook the marinated mutton with 150 ml water until tender but still holding its shape, about 3-4 whistles. Keep the mutton and its stock aside.",
+                "Heat the coconut oil in a thick-bottomed kadai. Add the curry leaves and let them splutter.",
+                "Add the sliced shallots and saute over medium heat until golden brown, about 6-8 minutes.",
+                "Add the ginger, garlic and green chilies, and saute for 1-2 minutes until fragrant.",
+                "Add the cooked mutton along with a little of its stock and the fennel powder, and mix well.",
+                "Cook over medium-high heat, stirring frequently, until the stock evaporates and the mutton begins to brown and roast in the masala, about 8-10 minutes.",
+                "Add the remaining crushed black pepper and the garam masala, toss well, and roast for another 3-5 minutes until dry and glossy.",
+                "Garnish with a few more curry leaves and serve hot."
+              ]
+            }
+          ]
+        },
+        "pork": {
+          "label": "Pork",
+          "image": "https://images.unsplash.com/photo-1513262599279-d287e25f4d84?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "pork-fried-chops",
+              "name": "Pork Fried Chops",
+              "image": "https://images.pexels.com/photos/18058351/pexels-photo-18058351.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Pork chops (bone-in)", "quantity": 800, "unit": "g", "note": "4 chops, about 2 cm thick, patted dry"},
+                {"item": "Buttermilk", "quantity": 480, "unit": "ml"},
+                {"item": "Hot sauce", "quantity": 10, "unit": "ml", "note": "e.g. Louisiana-style"},
+                {"item": "Self-rising flour", "quantity": 270, "unit": "g", "note": "or all-purpose flour + baking powder"},
+                {"item": "Seasoned salt", "quantity": 12, "unit": "g", "note": "about 2 tbsp"},
+                {"item": "Black pepper", "quantity": 5, "unit": "g", "note": "about 2.5 tsp"},
+                {"item": "Garlic powder", "quantity": 3, "unit": "g", "note": "1 tsp"},
+                {"item": "Cayenne pepper", "quantity": 2, "unit": "g", "note": "1 tsp, adjust to taste"},
+                {"item": "Smoked paprika", "quantity": 2, "unit": "g", "note": "1 tsp"},
+                {"item": "Vegetable oil", "quantity": 500, "unit": "ml", "note": "for shallow frying"}
+              ],
+              "steps": [
+                "Season the pork chops lightly with salt and pepper, then whisk the hot sauce into the buttermilk and submerge the chops. Marinate in the fridge for at least 1 hour, up to overnight.",
+                "In a large bowl or zip-top bag, combine the flour, seasoned salt, black pepper, garlic powder, cayenne, and smoked paprika; mix well.",
+                "Lift each chop from the buttermilk, letting excess drip off, then dredge thoroughly in the seasoned flour, pressing to coat evenly. For extra crunch, dip back into the buttermilk and coat in flour a second time.",
+                "Place the breaded chops on a wire rack or parchment-lined tray and let rest 15-20 minutes so the coating sets.",
+                "Heat the oil in a heavy skillet to about 175C (350F).",
+                "Fry the chops in batches, 2-4 minutes per side, until deep golden brown and crisp.",
+                "Check that the internal temperature reaches 63C (145F), then transfer to a paper-towel-lined rack to drain for a few minutes before serving."
+              ]
+            },
+            {
+              "id": "garlic-butter-pork",
+              "name": "Garlic Butter Pork",
+              "image": "https://images.unsplash.com/photo-1652378452875-5f80beafc549?auto=format&fit=crop&w=1200&q=80",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Pork chops (bone-in)", "quantity": 1000, "unit": "g", "note": "4 chops, about 250 g each"},
+                {"item": "Salt", "quantity": 4, "unit": "g", "note": "to taste"},
+                {"item": "Black pepper", "quantity": 2, "unit": "g", "note": "to taste"},
+                {"item": "Cooking oil", "quantity": 30, "unit": "ml", "note": "2 tbsp"},
+                {"item": "Unsalted butter", "quantity": 60, "unit": "g", "note": "4 tbsp"},
+                {"item": "Thyme", "quantity": 6, "unit": "pcs", "note": "sprigs"},
+                {"item": "Garlic", "quantity": 8, "unit": "cloves", "note": "minced"},
+                {"item": "Salt", "quantity": 2, "unit": "g", "note": "pinch, to finish"},
+                {"item": "Lemon", "quantity": 1, "unit": "pcs", "note": "cut into wedges, for serving"}
+              ],
+              "steps": [
+                "Pat the pork chops dry and season generously on both sides with salt and black pepper, pressing it in.",
+                "Heat a large skillet over medium-high heat and add the cooking oil, half the butter, and the thyme sprigs.",
+                "Once the fat is hot and shimmering, add the pork chops and sear about 3 minutes per side until golden brown.",
+                "Add the remaining butter and the minced garlic to the pan, then continue cooking, flipping the chops and spooning the garlic butter over them, until the garlic turns golden and the chops are cooked through.",
+                "Check the internal temperature reaches about 63C (145F); add a pinch of salt to taste.",
+                "Remove the pan from the heat and let the chops rest 3-5 minutes.",
+                "Serve the chops drizzled with the pan's garlic butter, with lemon wedges on the side."
+              ]
+            },
+            {
+              "id": "salt-pepper-pork-riblets",
+              "name": "Salt and Pepper Pork Riblets",
+              "image": "https://images.unsplash.com/photo-1679711246825-1f2bd51b16d0?auto=format&fit=crop&w=1200&q=80",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Pork riblets (spare rib pieces)", "quantity": 500, "unit": "g"},
+                {"item": "Light soy sauce", "quantity": 15, "unit": "ml", "note": "1 tbsp, for marinade"},
+                {"item": "Chinese cooking wine (Shaoxing wine)", "quantity": 8, "unit": "ml", "note": "1/2 tbsp"},
+                {"item": "Salt", "quantity": 5, "unit": "g", "note": "1 tsp, for marinade"},
+                {"item": "White or black pepper", "quantity": 1, "unit": "g", "note": "1/4 tsp"},
+                {"item": "Cornstarch", "quantity": 6, "unit": "g", "note": "2 tsp, for marinade"},
+                {"item": "Egg", "quantity": 1, "unit": "pcs"},
+                {"item": "Potato starch", "quantity": 60, "unit": "g", "note": "or cornstarch, for coating"},
+                {"item": "Vegetable oil", "quantity": 500, "unit": "ml", "note": "for deep frying"},
+                {"item": "Garlic", "quantity": 2, "unit": "cloves", "note": "chopped"},
+                {"item": "Vegetable oil", "quantity": 8, "unit": "ml", "note": "1/2 tbsp, for stir-frying aromatics"},
+                {"item": "Ginger", "quantity": 5, "unit": "g", "note": "minced"},
+                {"item": "Green onion", "quantity": 2, "unit": "pcs", "note": "white parts, finely chopped"},
+                {"item": "Green chili pepper", "quantity": 1, "unit": "pcs", "note": "chopped"},
+                {"item": "Red chili pepper", "quantity": 1, "unit": "pcs", "note": "chopped"},
+                {"item": "Salt and pepper", "quantity": 3, "unit": "g", "note": "to taste, for finishing"}
+              ],
+              "steps": [
+                "Soak the pork riblets in cold water for 30 minutes, changing the water once, to remove blood and impurities; drain well.",
+                "Marinate the riblets with soy sauce, cooking wine, salt, pepper, and cornstarch for at least 4 hours, or overnight in the fridge.",
+                "Just before cooking, mix the egg into the marinated riblets, then coat each piece evenly in potato starch.",
+                "Heat the frying oil to about 170C (340F) and fry the riblets in batches over medium-low heat for 6-8 minutes, until cooked through and lightly crisp; drain on paper towels.",
+                "In a separate pan, heat the 1/2 tbsp of oil and quickly stir-fry the garlic, ginger, green onion, and chopped chilies until fragrant, about 30 seconds.",
+                "Add the fried riblets to the pan and toss everything together over high heat for 1-2 minutes.",
+                "Season with the finishing salt and pepper, tossing to coat evenly.",
+                "Serve hot, with extra salt-and-pepper seasoning on the side if desired."
+              ]
+            },
+            {
+              "id": "pork-curry",
+              "name": "Pork Curry",
+              "image": "https://images.pexels.com/photos/15797984/pexels-photo-15797984.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Pork", "quantity": 500, "unit": "g", "note": "cubed, shoulder or leg"},
+                {"item": "Potatoes", "quantity": 300, "unit": "g", "note": "2 medium, cubed"},
+                {"item": "Garlic", "quantity": 8, "unit": "cloves"},
+                {"item": "Ginger", "quantity": 30, "unit": "g", "note": "roughly chopped, about a 5 cm piece"},
+                {"item": "Vegetable oil", "quantity": 15, "unit": "ml", "note": "1 tbsp"},
+                {"item": "Cumin seeds", "quantity": 2, "unit": "g", "note": "1/2 tsp"},
+                {"item": "Dried red chilies", "quantity": 3, "unit": "pcs", "note": "broken"},
+                {"item": "Bay leaf", "quantity": 1, "unit": "pcs"},
+                {"item": "Onion", "quantity": 300, "unit": "g", "note": "2 medium, chopped"},
+                {"item": "Tomato", "quantity": 150, "unit": "g", "note": "1 medium, chopped"},
+                {"item": "Turmeric powder", "quantity": 5, "unit": "g", "note": "1 tsp"},
+                {"item": "Kashmiri red chili powder", "quantity": 10, "unit": "g", "note": "2 tsp"},
+                {"item": "Coriander powder", "quantity": 5, "unit": "g", "note": "1 tsp"},
+                {"item": "Black peppercorns", "quantity": 5, "unit": "g", "note": "1 tsp, cracked"},
+                {"item": "Garam masala powder", "quantity": 5, "unit": "g", "note": "1 tsp"},
+                {"item": "Meat masala powder", "quantity": 5, "unit": "g", "note": "1 tsp, or extra garam masala"},
+                {"item": "Salt", "quantity": 6, "unit": "g", "note": "to taste"},
+                {"item": "Water", "quantity": 500, "unit": "ml"}
+              ],
+              "steps": [
+                "Using a mortar and pestle or blender, coarsely crush the ginger and garlic together; set aside about 1 teaspoon of the mixture to add at the end.",
+                "Heat the oil in a heavy pot, add the cumin seeds, dried red chilies, and bay leaf, and let them sizzle for a few seconds.",
+                "Add most of the crushed ginger-garlic and saute for about 1 minute until fragrant.",
+                "Add the chopped onions and cook for 2-3 minutes until softened and translucent.",
+                "Add the chopped tomato and cook until soft and mushy, then stir in the turmeric, chili powder, coriander powder, cracked pepper, garam masala, and meat masala; saute for 1 minute.",
+                "Add the pork and salt, mixing well to coat the meat in the masala. Cover and cook on low-medium heat for about 15 minutes, stirring occasionally.",
+                "Add the potatoes and water, stir well, cover, and simmer, stirring occasionally, until the pork is tender and the gravy has thickened to your liking, about 30-40 minutes.",
+                "Stir in the reserved ginger-garlic paste, cook for another minute, then remove from heat and serve with rice or flatbread."
+              ]
+            }
+          ]
+        },
+        "fish": {
+          "label": "Fish",
+          "image": "https://images.unsplash.com/photo-1761314036779-84078bec535c?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "fish-biryani",
+              "name": "Fish Biryani",
+              "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2018/08/fish-biryani.jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Fish fillets (kingfish or pomfret)", "quantity": 650, "unit": "g", "note": "cut into large pieces"},
+                {"item": "Ginger garlic paste", "quantity": 1.5, "unit": "tsp", "note": "for marinade"},
+                {"item": "Red chili powder", "quantity": 0.75, "unit": "tsp", "note": "for marinade"},
+                {"item": "Garam masala powder", "quantity": 0.75, "unit": "tsp", "note": "for marinade"},
+                {"item": "Turmeric powder", "quantity": 0.25, "unit": "tsp", "note": "for marinade"},
+                {"item": "Lemon juice", "quantity": 2, "unit": "tbsp", "note": "for marinade"},
+                {"item": "Salt", "quantity": 0.5, "unit": "tsp", "note": "for marinade"},
+                {"item": "Bay leaf", "quantity": 1, "unit": "pcs"},
+                {"item": "Star anise", "quantity": 1, "unit": "pcs"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "about 1.5 inch"},
+                {"item": "Cloves", "quantity": 5, "unit": "pcs"},
+                {"item": "Green cardamom", "quantity": 4, "unit": "pcs"},
+                {"item": "Shahi jeera (caraway seeds)", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Cooking oil", "quantity": 4, "unit": "tbsp", "note": "for frying fish and gravy"},
+                {"item": "Onion", "quantity": 150, "unit": "g", "note": "thinly sliced"},
+                {"item": "Tomato", "quantity": 80, "unit": "g", "note": "chopped, optional"},
+                {"item": "Ginger garlic paste", "quantity": 1.5, "unit": "tsp", "note": "for gravy"},
+                {"item": "Garam masala powder", "quantity": 1, "unit": "tsp", "note": "for gravy"},
+                {"item": "Coriander powder", "quantity": 0.75, "unit": "tsp"},
+                {"item": "Red chili powder", "quantity": 0.75, "unit": "tsp", "note": "for gravy"},
+                {"item": "Plain yogurt or coconut milk", "quantity": 150, "unit": "ml"},
+                {"item": "Kewra water", "quantity": 1.5, "unit": "tsp", "note": "optional"},
+                {"item": "Mint leaves", "quantity": 3, "unit": "tbsp", "note": "chopped"},
+                {"item": "Coriander leaves", "quantity": 3, "unit": "tbsp", "note": "chopped"},
+                {"item": "Saffron strands", "quantity": 0.1, "unit": "g", "note": "optional, soaked in milk"},
+                {"item": "Milk", "quantity": 3, "unit": "tbsp", "note": "for saffron"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "to taste, for gravy and rice"},
+                {"item": "Basmati rice", "quantity": 300, "unit": "g"},
+                {"item": "Oil", "quantity": 1, "unit": "tsp", "note": "for boiling rice"}
+              ],
+              "steps": [
+                "Marinate the fish pieces with ginger-garlic paste, red chili powder, garam masala, turmeric, lemon juice and salt; set aside for about 20 minutes.",
+                "Wash and soak the basmati rice for 20-30 minutes, then drain. Boil it in salted water with a little oil until about 70% cooked, then drain.",
+                "Shallow-fry the marinated fish pieces in hot oil until golden and just cooked through, roughly 3-4 minutes per side; remove and set aside.",
+                "In the same pan, fry the sliced onions until golden; remove half for garnish. Add the whole spices, ginger-garlic paste and tomato, and cook until soft.",
+                "Stir in the garam masala, coriander powder, chili powder and salt, then add the yogurt or coconut milk and simmer until the gravy thickens slightly.",
+                "In a heavy-bottomed pot, layer half the rice, then the gravy with the fried fish, mint and coriander leaves, then top with the remaining rice.",
+                "Sprinkle the fried onions, saffron milk and kewra water over the top. Cover tightly with foil and a lid.",
+                "Cook on high heat for 2 minutes, then reduce to very low heat and cook for another 10 minutes (dum).",
+                "Rest for 15 minutes before gently fluffing and serving hot with onion raita."
+              ]
+            },
+            {
+              "id": "fish-curry",
+              "name": "Fish Curry",
+              "image": "https://images.unsplash.com/photo-1761314036779-84078bec535c",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Fish steaks", "quantity": 700, "unit": "g", "note": "cut into 1-inch thick pieces"},
+                {"item": "Coconut oil", "quantity": 2, "unit": "tbsp"},
+                {"item": "Shallots (small red onions)", "quantity": 120, "unit": "g", "note": "roughly chopped"},
+                {"item": "Ginger", "quantity": 15, "unit": "g", "note": "peeled"},
+                {"item": "Garlic", "quantity": 4, "unit": "cloves"},
+                {"item": "Tomato", "quantity": 130, "unit": "ml", "note": "crushed"},
+                {"item": "Green chilies", "quantity": 2, "unit": "pcs", "note": "slit"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Kashmiri red chili powder", "quantity": 2.5, "unit": "tbsp"},
+                {"item": "Coriander powder", "quantity": 1.5, "unit": "tbsp"},
+                {"item": "Fenugreek (methi) powder", "quantity": 0.5, "unit": "tsp", "note": "optional"},
+                {"item": "Sea salt", "quantity": 1.25, "unit": "tsp", "note": "to taste"},
+                {"item": "Kudampuli (Malabar tamarind)", "quantity": 3, "unit": "pcs"},
+                {"item": "Coconut milk", "quantity": 270, "unit": "ml"},
+                {"item": "Coconut oil", "quantity": 2, "unit": "tbsp", "note": "for tempering"},
+                {"item": "Brown mustard seeds", "quantity": 0.25, "unit": "tsp", "note": "for tempering"},
+                {"item": "Shallots", "quantity": 30, "unit": "g", "note": "sliced, for tempering"},
+                {"item": "Dried red chilies", "quantity": 2, "unit": "pcs", "note": "for tempering"},
+                {"item": "Curry leaves", "quantity": 2, "unit": "sprigs", "note": "for tempering"}
+              ],
+              "steps": [
+                "Soak the kudampuli pieces in a little hot water for about 10 minutes.",
+                "Coarsely process or pound the shallots, ginger and garlic together.",
+                "Heat coconut oil in a wide clay pot or pan; add curry leaves, green chilies and the shallot-ginger-garlic mixture, and saute 6-7 minutes until softened.",
+                "Add the crushed tomato and cook 4-5 minutes until soft, then stir in the turmeric, chili powder, coriander powder and salt.",
+                "Add the soaked kudampuli with its soaking water, plus part of the coconut milk and a little water; bring to a boil and simmer covered for 3-4 minutes.",
+                "Gently slide in the fish pieces, spoon the liquid over them, cover and simmer for about 10 minutes without stirring too roughly.",
+                "Pour in the remaining coconut milk and simmer uncovered for 5 minutes until the fish is cooked through.",
+                "For the tempering, heat oil in a small pan, splutter mustard seeds, then fry the shallots, curry leaves and dried red chilies until golden, and pour over the curry.",
+                "Let the curry rest a few minutes before serving with rice, appam or flatbreads."
+              ]
+            },
+            {
+              "id": "fish-mulakittathu",
+              "name": "Fish Mulakittathu",
+              "image": "https://images.unsplash.com/photo-1761314037238-e4da5023e844",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Fish (kingfish, mackerel or pomfret)", "quantity": 500, "unit": "g", "note": "cut into medium pieces"},
+                {"item": "Pearl onions or shallots", "quantity": 150, "unit": "g", "note": "sliced"},
+                {"item": "Green chilies", "quantity": 2, "unit": "pcs", "note": "slit"},
+                {"item": "Ginger", "quantity": 12, "unit": "g", "note": "crushed"},
+                {"item": "Garlic", "quantity": 3, "unit": "cloves", "note": "crushed"},
+                {"item": "Kudampuli (gambooge)", "quantity": 3, "unit": "pcs"},
+                {"item": "Kashmiri chili powder", "quantity": 2, "unit": "tbsp"},
+                {"item": "Turmeric powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 2, "unit": "tbsp"},
+                {"item": "Mustard seeds", "quantity": 1, "unit": "tsp"},
+                {"item": "Fenugreek seeds", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Curry leaves", "quantity": 3, "unit": "sprigs"},
+                {"item": "Coconut oil", "quantity": 3, "unit": "tbsp"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "to taste"},
+                {"item": "Water", "quantity": 375, "unit": "ml"}
+              ],
+              "steps": [
+                "Clean the fish thoroughly and cut into medium pieces; set aside.",
+                "Soak the kudampuli pieces in warm water for about 10 minutes.",
+                "Heat coconut oil in a traditional clay pot or heavy pan; splutter the mustard seeds, then add the fenugreek seeds and curry leaves and saute briefly.",
+                "Add the crushed ginger and garlic and saute until the raw smell disappears, then add the sliced shallots, green chilies and salt, and cook until translucent.",
+                "Lower the heat and stir in the chili powder, coriander powder and turmeric powder; saute for 2-3 minutes without letting the spices burn.",
+                "Add the soaked kudampuli with its soaking water and the measured water, and bring to a boil.",
+                "Add the fish pieces, adjust the salt, cover and simmer on medium heat for 5-7 minutes until the fish is cooked and the gravy turns thick and deep red.",
+                "Remove from heat, garnish with a few extra curry leaves, cover and rest for 20-30 minutes so the flavors deepen before serving with rice."
+              ]
+            },
+            {
+              "id": "fish-dry-fry",
+              "name": "Fish Dry Fry",
+              "image": "https://www.cookingandme.com/wp-content/uploads/2015/10/22141640902_2757cd2ed9_z.jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Kingfish steaks (or other firm fish)", "quantity": 600, "unit": "g", "note": "4-5 medium steaks"},
+                {"item": "Ginger garlic paste", "quantity": 2, "unit": "tsp"},
+                {"item": "Kashmiri chili powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Black pepper", "quantity": 0.5, "unit": "tsp", "note": "crushed"},
+                {"item": "Lime juice", "quantity": 2, "unit": "tsp"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "to taste"},
+                {"item": "Curry leaves", "quantity": 1, "unit": "sprigs", "note": "optional, added while frying"},
+                {"item": "Coconut oil", "quantity": 60, "unit": "ml", "note": "for shallow frying"}
+              ],
+              "steps": [
+                "Rub the fish pieces with salt and lime juice, then rinse briefly and pat them completely dry.",
+                "Grind the ginger-garlic paste, chili powder, turmeric and crushed pepper with a little water into a thick, fine spice paste.",
+                "Make a few shallow diagonal cuts on the fish pieces and coat them thoroughly with the spice paste, working it into the cuts.",
+                "Cover and marinate in the refrigerator for at least 30 minutes.",
+                "Heat coconut oil in a shallow frying pan over low-medium heat, adding the curry leaves if using.",
+                "Place the marinated fish pieces in the hot oil and fry for 3-4 minutes per side until a deep reddish-brown crust forms and the fish is cooked through.",
+                "Drain briefly on paper towels and serve hot with onion rings and lime wedges."
+              ]
+            },
+            {
+              "id": "fish-garlic-butter",
+              "name": "Fish Garlic Butter",
+              "image": "https://images.unsplash.com/photo-1785502108655-1ede493791bc",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "White fish or salmon fillets", "quantity": 4, "unit": "pcs", "note": "about 180 g each, skinless and boneless"},
+                {"item": "Salt", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Black pepper", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Olive oil", "quantity": 1.5, "unit": "tbsp"},
+                {"item": "Garlic", "quantity": 2, "unit": "cloves", "note": "finely minced"},
+                {"item": "Butter", "quantity": 90, "unit": "g", "note": "cubed"},
+                {"item": "Lemon juice", "quantity": 1, "unit": "tsp"},
+                {"item": "Parsley", "quantity": 2, "unit": "tsp", "note": "finely chopped"}
+              ],
+              "steps": [
+                "Remove the fish fillets from the refrigerator about 30 minutes before cooking; pat dry and season both sides with salt and pepper.",
+                "Heat the olive oil in a large non-stick skillet over medium-high heat.",
+                "Place the fillets presentation-side down and sear undisturbed for about 3 minutes until golden.",
+                "Flip the fillets carefully and cook the other side for about 1 minute.",
+                "Add the butter and minced garlic to the pan; once melted and foaming, tilt the pan and continuously spoon the bubbling garlic butter over the fish for 1-2 minutes.",
+                "Cook until the fish is just cooked through and flakes easily with a fork.",
+                "Remove the fish to a plate to rest for a couple of minutes; stir the lemon juice into the remaining garlic butter in the pan.",
+                "Spoon the garlic butter sauce over the fillets, garnish with chopped parsley, and serve immediately."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "veg": {
+      "label": "Veg",
+      "heroImage": "https://images.unsplash.com/photo-1711153419402-336ee48f2138?q=80&w=1600&auto=format&fit=crop",
+      "subcategories": {
+        "mushroom": {
+          "label": "Mushroom",
+          "image": "https://images.unsplash.com/photo-1520218413338-9f1f2b052274?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "mushroom-garlic-butter-curry",
+              "name": "Mushroom Garlic Butter Curry",
+              "image": "https://images.unsplash.com/photo-1760731755984-442f86f9b744",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Button mushrooms", "quantity": 500, "unit": "g", "note": "cleaned and sliced"},
+                {"item": "Butter", "quantity": 40, "unit": "g", "note": "divided"},
+                {"item": "Onion", "quantity": 150, "unit": "g", "note": "finely chopped"},
+                {"item": "Garlic", "quantity": 6, "unit": "cloves", "note": "minced"},
+                {"item": "Green chili", "quantity": 1, "unit": "pcs", "note": "chopped, optional"},
+                {"item": "Tomato", "quantity": 100, "unit": "g", "note": "chopped"},
+                {"item": "Green peas", "quantity": 150, "unit": "g", "note": "thawed if frozen"},
+                {"item": "Asafoetida (hing)", "quantity": 0.5, "unit": "g", "note": "a pinch"},
+                {"item": "Green cardamom pod", "quantity": 1, "unit": "pcs", "note": "lightly cracked"},
+                {"item": "Cumin seeds", "quantity": 1, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Red chili powder", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Cumin powder", "quantity": 1.5, "unit": "tsp", "note": "toasted"},
+                {"item": "Coriander powder", "quantity": 1, "unit": "tbsp"},
+                {"item": "Garam masala", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Heavy cream", "quantity": 60, "unit": "ml"},
+                {"item": "Kasuri methi (dried fenugreek leaves)", "quantity": 1, "unit": "tsp", "note": "crushed"},
+                {"item": "Water", "quantity": 100, "unit": "ml"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "to taste"},
+                {"item": "Cilantro", "quantity": 10, "unit": "g", "note": "chopped, for garnish"}
+              ],
+              "steps": [
+                "Wipe the mushrooms clean with a damp cloth and slice them.",
+                "Melt half the butter in a wide pan over medium-high heat. Add the mushrooms and saute for 6-8 minutes until browned and most of the released moisture has evaporated. Remove and set aside.",
+                "In the same pan, melt the remaining butter, then add asafoetida, cumin seeds, and cardamom. Let the cumin sizzle for about 20 seconds.",
+                "Add garlic and green chili; saute on low heat for 30 seconds until fragrant, being careful not to burn the garlic.",
+                "Add the onion with a pinch of salt and cook for 3-4 minutes until softened and lightly golden.",
+                "Stir in turmeric, red chili powder, cumin powder, and coriander powder; cook for 30 seconds, then add the chopped tomato and cook 2-3 minutes until pulpy.",
+                "Add the water, peas, and the browned mushrooms; cover and simmer for 5 minutes.",
+                "Whisk the cream with kasuri methi and stir it in along with salt and garam masala; simmer uncovered for 2-3 minutes until slightly thickened.",
+                "Garnish with chopped cilantro and serve hot with steamed rice, naan, or roti."
+              ]
+            },
+            {
+              "id": "mushroom-stir-fry",
+              "name": "Mushroom Stir-Fry",
+              "image": "https://images.unsplash.com/photo-1508338712271-40539c947a8b",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Mixed fresh mushrooms (shiitake, oyster, button)", "quantity": 500, "unit": "g", "note": "cleaned, torn or sliced"},
+                {"item": "Vegetable oil", "quantity": 2, "unit": "tbsp"},
+                {"item": "Sesame oil", "quantity": 2, "unit": "tsp"},
+                {"item": "Ginger", "quantity": 20, "unit": "g", "note": "julienned"},
+                {"item": "Garlic", "quantity": 3, "unit": "cloves", "note": "sliced"},
+                {"item": "Scallions (spring onions)", "quantity": 8, "unit": "pcs", "note": "white and green parts separated, cut into 2-inch pieces"},
+                {"item": "Oyster sauce", "quantity": 1, "unit": "tbsp"},
+                {"item": "Light soy sauce", "quantity": 1, "unit": "tbsp"},
+                {"item": "Dark soy sauce", "quantity": 2, "unit": "tsp", "note": "optional, for color"},
+                {"item": "Shaoxing wine", "quantity": 1, "unit": "tbsp", "note": "optional"},
+                {"item": "White pepper", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Red chili", "quantity": 1, "unit": "pcs", "note": "sliced, optional garnish"}
+              ],
+              "steps": [
+                "Clean the mushrooms with a damp cloth or a very brief rinse, then pat completely dry. Tear or slice larger mushrooms into bite-sized pieces.",
+                "Heat vegetable oil in a wok over medium-low heat. Add the scallion whites and ginger and fry gently until fragrant and lightly browned, about 1 minute.",
+                "Add garlic and stir for 15-20 seconds until aromatic.",
+                "Raise the heat to high, add the mushrooms, and stir-fry for 1-2 minutes.",
+                "Add oyster sauce, light soy sauce, and dark soy sauce; toss to coat the mushrooms evenly.",
+                "The mushrooms will release liquid: keep stir-frying for 3-4 minutes until it mostly evaporates and the mushrooms turn glossy and tender.",
+                "Splash the Shaoxing wine along the sides of the wok and toss for 30 seconds.",
+                "Drizzle in sesame oil, sprinkle white pepper, and toss in the scallion greens; stir-fry for a final 30 seconds.",
+                "Transfer to a plate, top with sliced chili if using, and serve immediately with steamed rice."
+              ]
+            },
+            {
+              "id": "mushroom-fried-rice",
+              "name": "Mushroom Fried Rice",
+              "image": "https://images.unsplash.com/photo-1693296303873-126aa7f6e5b3",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Dried shiitake mushrooms", "quantity": 30, "unit": "g", "note": "rehydrated in warm water for 2 hours, then sliced"},
+                {"item": "Hot water", "quantity": 15, "unit": "ml", "note": "for sauce"},
+                {"item": "Light soy sauce", "quantity": 1, "unit": "tbsp"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "plus a pinch for the eggs"},
+                {"item": "Sugar", "quantity": 0.25, "unit": "tsp"},
+                {"item": "White pepper", "quantity": 0.125, "unit": "tsp"},
+                {"item": "Eggs", "quantity": 2, "unit": "pcs", "note": "large, beaten"},
+                {"item": "Shaoxing wine", "quantity": 1.5, "unit": "tbsp", "note": "divided"},
+                {"item": "Sesame oil", "quantity": 0.25, "unit": "tsp"},
+                {"item": "Cooked long-grain white rice", "quantity": 800, "unit": "g", "note": "day-old, chilled, fluffed"},
+                {"item": "Vegetable oil", "quantity": 52, "unit": "ml", "note": "divided (about 3.5 tbsp)"},
+                {"item": "Red onion", "quantity": 50, "unit": "g", "note": "chopped"},
+                {"item": "Scallions", "quantity": 2, "unit": "pcs", "note": "white and green parts separated, sliced"},
+                {"item": "White button mushrooms", "quantity": 150, "unit": "g", "note": "sliced"},
+                {"item": "Oyster mushrooms", "quantity": 150, "unit": "g", "note": "torn into pieces"}
+              ],
+              "steps": [
+                "Rehydrate the dried shiitake mushrooms in warm water until soft, then squeeze dry and slice thinly.",
+                "Combine the hot water, soy sauce, salt, sugar, and white pepper in a small bowl to make a seasoning sauce.",
+                "Beat the eggs with a pinch of salt and 0.5 tbsp of the Shaoxing wine plus the sesame oil.",
+                "Fluff the cold, cooked rice with your hands or a fork, breaking up any large clumps.",
+                "Heat a wok over medium-high heat, add about half the vegetable oil, and scramble the eggs until just barely set; remove and set aside.",
+                "Add a little more oil, then stir-fry the onion and scallion whites for about 1 minute, followed by the shiitake mushrooms for 30 seconds.",
+                "Add the remaining oil along with the fresh button and oyster mushrooms; stir-fry 1-2 minutes until browned, then splash in the remaining wine.",
+                "Add the rice, breaking up any clumps, and stir-fry for 3-5 minutes until heated through and starting to lightly toast. Pour in the seasoning sauce and mix thoroughly.",
+                "Fold in the scrambled eggs and scallion greens; stir-fry for 30 seconds more and serve hot, with chili oil on the side if desired."
+              ]
+            },
+            {
+              "id": "mushroom-curry",
+              "name": "Mushroom Curry",
+              "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Button mushrooms", "quantity": 300, "unit": "g", "note": "cleaned and sliced"},
+                {"item": "Onion", "quantity": 130, "unit": "g", "note": "chopped, for paste"},
+                {"item": "Ginger", "quantity": 1.5, "unit": "tsp", "note": "chopped, for paste"},
+                {"item": "Garlic", "quantity": 1.5, "unit": "tsp", "note": "chopped, for paste"},
+                {"item": "Tomato", "quantity": 90, "unit": "g", "note": "chopped, pureed"},
+                {"item": "Plain yogurt", "quantity": 80, "unit": "ml", "note": "whisked smooth"},
+                {"item": "Neutral oil", "quantity": 60, "unit": "ml"},
+                {"item": "Cumin seeds", "quantity": 0.75, "unit": "tsp"},
+                {"item": "Bay leaf", "quantity": 2, "unit": "pcs", "note": "small"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "1-inch piece"},
+                {"item": "Black cardamom", "quantity": 1, "unit": "pcs", "note": "optional"},
+                {"item": "Green cardamom", "quantity": 3, "unit": "pcs"},
+                {"item": "Cloves", "quantity": 4, "unit": "pcs"},
+                {"item": "Mace", "quantity": 1, "unit": "pcs", "note": "strand, optional"},
+                {"item": "Turmeric powder", "quantity": 0.33, "unit": "tsp"},
+                {"item": "Red chili powder", "quantity": 0.75, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Water", "quantity": 240, "unit": "ml", "note": "adjust as needed"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp", "note": "to taste"},
+                {"item": "Garam masala", "quantity": 0.33, "unit": "tsp"},
+                {"item": "Kasuri methi (dried fenugreek leaves)", "quantity": 1, "unit": "tsp", "note": "crushed"},
+                {"item": "Cilantro", "quantity": 10, "unit": "g", "note": "chopped, for garnish"}
+              ],
+              "steps": [
+                "Rinse and dry the mushrooms, trim the stalk bases, then slice or halve them.",
+                "Grind the onion, ginger, and garlic into a smooth paste without adding water. Separately puree the tomato and whisk the yogurt until smooth.",
+                "Heat oil in a pan and add the cumin seeds, bay leaves, cinnamon, both cardamoms, cloves, and mace. Fry until fragrant, about 30-45 seconds.",
+                "Add the onion paste and a pinch of salt; saute on low-medium heat, stirring frequently, until it turns golden and caramelized, about 10-12 minutes.",
+                "Add the tomato puree and cook for 2-3 minutes, then stir in the turmeric, red chili powder, and coriander powder; saute until the mixture looks glossy and oil separates at the edges.",
+                "Add the sliced mushrooms and mix well to coat them in the masala.",
+                "Lower the heat, pour in the whisked yogurt, and stir continuously for 2-3 minutes to prevent it from splitting.",
+                "Add the water and salt, cover, and simmer for 18-20 minutes until the mushrooms are tender and the gravy has thickened.",
+                "Stir in the garam masala and crushed kasuri methi, garnish with cilantro, and serve hot with roti or steamed rice."
+              ]
+            }
+          ]
+        },
+        "gobi": {
+          "label": "Gobi",
+          "image": "https://images.unsplash.com/photo-1565849541238-a094440cba72?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "gobi-fry",
+              "name": "Gobi Fry",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gobi_65_(cauliflower_fry).jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Cauliflower, cut into medium florets", "quantity": 500, "unit": "g"},
+                {"item": "Corn flour (cornstarch)", "quantity": 45, "unit": "g", "note": "about 3 tbsp"},
+                {"item": "Rice flour", "quantity": 30, "unit": "g", "note": "about 2 tbsp"},
+                {"item": "Besan (gram flour)", "quantity": 30, "unit": "g", "note": "about 2 tbsp"},
+                {"item": "Ginger-garlic paste", "quantity": 15, "unit": "g", "note": "about 1 tbsp"},
+                {"item": "Red chilli powder", "quantity": 2, "unit": "tsp"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Black pepper, crushed", "quantity": 1, "unit": "tsp"},
+                {"item": "Garam masala", "quantity": 1, "unit": "tsp"},
+                {"item": "Curry leaves", "quantity": 20, "unit": "pcs", "note": "about 2 sprigs"},
+                {"item": "Green chillies, slit", "quantity": 2, "unit": "pcs"},
+                {"item": "Lemon juice", "quantity": 15, "unit": "ml", "note": "about 1 tbsp"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp", "note": "to taste"},
+                {"item": "Oil", "quantity": 500, "unit": "ml", "note": "for deep frying"},
+                {"item": "Oil", "quantity": 15, "unit": "ml", "note": "for tempering curry leaves"}
+              ],
+              "steps": [
+                "Wash the cauliflower florets and blanch in hot salted water for 2 minutes; drain well and pat completely dry.",
+                "In a mixing bowl, combine corn flour, rice flour, besan, ginger-garlic paste, red chilli powder, turmeric, black pepper, and salt with a splash of water to make a thick coating batter.",
+                "Add the cauliflower florets to the batter and toss until every piece is evenly coated.",
+                "Heat oil in a deep pan over medium-high heat (about 180C).",
+                "Fry the coated florets in batches for 3-4 minutes, until golden brown and crisp; drain on paper towels.",
+                "In a separate small pan, heat 1 tbsp oil, then add curry leaves and slit green chillies; saute for 30 seconds until they crackle.",
+                "Toss the fried cauliflower with the tempered curry leaves and chillies, then sprinkle over the garam masala and toss again to coat evenly.",
+                "Squeeze fresh lemon juice over the fry and give it one final toss.",
+                "Serve immediately while hot and crisp, as a starter or side dish."
+              ]
+            },
+            {
+              "id": "gobi-curry",
+              "name": "Gobi Curry",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aloo_gobi.jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Cauliflower, cut into florets", "quantity": 700, "unit": "g"},
+                {"item": "Oil", "quantity": 60, "unit": "ml", "note": "for sauteing cauliflower"},
+                {"item": "Onion, finely chopped", "quantity": 200, "unit": "g"},
+                {"item": "Tomatoes", "quantity": 300, "unit": "g", "note": "roughly chopped, for the paste"},
+                {"item": "Cashews", "quantity": 20, "unit": "g"},
+                {"item": "Ginger-garlic paste", "quantity": 20, "unit": "g"},
+                {"item": "Yogurt, whisked", "quantity": 90, "unit": "g"},
+                {"item": "Turmeric powder", "quantity": 0.5, "unit": "tsp"},
+                {"item": "Red chilli powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Coriander powder", "quantity": 1.5, "unit": "tsp"},
+                {"item": "Cumin powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Garam masala", "quantity": 1, "unit": "tsp"},
+                {"item": "Bay leaf", "quantity": 1, "unit": "pcs"},
+                {"item": "Caraway seeds (shahi jeera)", "quantity": 1, "unit": "tsp"},
+                {"item": "Kasuri methi (dried fenugreek leaves)", "quantity": 1, "unit": "tsp"},
+                {"item": "Water", "quantity": 350, "unit": "ml"},
+                {"item": "Fresh cream", "quantity": 45, "unit": "ml"},
+                {"item": "Oil", "quantity": 45, "unit": "ml", "note": "for the curry base"},
+                {"item": "Salt", "quantity": 1.5, "unit": "tsp", "note": "to taste"}
+              ],
+              "steps": [
+                "Blanch the cauliflower florets in hot salted water for 5 minutes, then drain.",
+                "Heat 60 ml oil in a pan, add the blanched florets, and saute on medium heat for 8-10 minutes until lightly golden; set aside.",
+                "Blend the tomatoes and cashews into a smooth paste.",
+                "In the same pan, heat the remaining 45 ml oil; add the bay leaf and caraway seeds and saute until fragrant.",
+                "Add the chopped onion and cook until golden brown, then stir in the ginger-garlic paste and cook until the raw smell fades.",
+                "Add the tomato-cashew paste along with turmeric, red chilli powder, coriander powder, cumin powder, and salt; cook for 10-12 minutes, stirring, until the oil separates.",
+                "Lower the heat, stir in the whisked yogurt, then add the water and bring to a gentle simmer.",
+                "Add the sauteed cauliflower, cover, and simmer for 10-15 minutes until the curry thickens and the cauliflower is tender.",
+                "Stir in the kasuri methi, garam masala, and cream; simmer 2 more minutes and serve hot with roti or rice."
+              ]
+            },
+            {
+              "id": "gobi-pulao",
+              "name": "Gobi Pulao",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Veg_Pulao_(Indian_fried_rice).jpg",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Basmati rice", "quantity": 400, "unit": "g"},
+                {"item": "Cauliflower, cut into florets", "quantity": 600, "unit": "g"},
+                {"item": "Turmeric powder", "quantity": 1.5, "unit": "tsp", "note": "divided between marinade and gravy"},
+                {"item": "Red chilli powder", "quantity": 1.5, "unit": "tsp", "note": "divided between marinade and gravy"},
+                {"item": "Garam masala", "quantity": 2, "unit": "tsp", "note": "divided between marinade and gravy"},
+                {"item": "Onion, thinly sliced", "quantity": 200, "unit": "g"},
+                {"item": "Tomato, chopped", "quantity": 200, "unit": "g"},
+                {"item": "Ginger-garlic paste", "quantity": 30, "unit": "g"},
+                {"item": "Green peas", "quantity": 150, "unit": "g"},
+                {"item": "Oil", "quantity": 60, "unit": "ml"},
+                {"item": "Cumin seeds", "quantity": 2, "unit": "tsp"},
+                {"item": "Bay leaf", "quantity": 2, "unit": "pcs"},
+                {"item": "Cinnamon stick", "quantity": 2, "unit": "pcs", "note": "2-inch pieces"},
+                {"item": "Cloves", "quantity": 6, "unit": "pcs"},
+                {"item": "Green cardamom", "quantity": 4, "unit": "pcs"},
+                {"item": "Water", "quantity": 700, "unit": "ml"},
+                {"item": "Lime juice", "quantity": 30, "unit": "ml"},
+                {"item": "Coriander leaves, chopped", "quantity": 15, "unit": "g"},
+                {"item": "Salt", "quantity": 2, "unit": "tsp", "note": "to taste"}
+              ],
+              "steps": [
+                "Marinate the cauliflower florets with half the turmeric, red chilli powder, garam masala, and a little salt; set aside for 15-20 minutes.",
+                "Rinse the basmati rice in cold water until it runs clear, then soak for 20 minutes and drain.",
+                "Heat oil in a heavy-bottomed pot; add cumin seeds, bay leaf, cinnamon, cloves, and cardamom, and saute until fragrant.",
+                "Add the sliced onions and ginger-garlic paste; saute until the onions turn golden.",
+                "Stir in the chopped tomatoes and remaining turmeric, chilli powder, and garam masala; cook until soft and mushy.",
+                "Add the marinated cauliflower and green peas; mix well and cook for 3-4 minutes.",
+                "Add the drained rice, water, and salt; stir gently to combine without breaking the rice grains.",
+                "Bring to a boil, then cover and simmer on low heat for 15-18 minutes (or pressure cook for 1 whistle) until the rice is fully cooked and the water is absorbed.",
+                "Fluff the rice gently with a fork, stir in the lime juice and chopped coriander, and serve hot."
+              ]
+            }
+          ]
+        },
+        "mixveg": {
+          "label": "Mix Veg",
+          "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=800&auto=format&fit=crop",
+          "dishes": [
+            {
+              "id": "veg-biryani",
+              "name": "Veg Biryani",
+              "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vegetable_Biryani.JPG",
+              "baseServings": 4,
+              "ingredients": [
+                {"item": "Basmati rice", "quantity": 300, "unit": "g"},
+                {"item": "Green cardamom pods", "quantity": 4, "unit": "pcs", "note": "for boiling rice"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "1-inch, for boiling rice"},
+                {"item": "Bay leaf", "quantity": 1, "unit": "pcs", "note": "for boiling rice"},
+                {"item": "Star anise", "quantity": 2, "unit": "pcs"},
+                {"item": "Black cardamom", "quantity": 1, "unit": "pcs"},
+                {"item": "Water", "quantity": 1200, "unit": "ml", "note": "for cooking rice"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "for rice water"},
+                {"item": "Onion, thinly sliced", "quantity": 200, "unit": "g"},
+                {"item": "Ginger-garlic paste", "quantity": 15, "unit": "g"},
+                {"item": "Carrot, chopped", "quantity": 100, "unit": "g"},
+                {"item": "Potato, chopped", "quantity": 150, "unit": "g"},
+                {"item": "Cauliflower florets", "quantity": 100, "unit": "g", "note": "optional"},
+                {"item": "Button mushrooms, chopped", "quantity": 75, "unit": "g"},
+                {"item": "French beans, chopped", "quantity": 50, "unit": "g"},
+                {"item": "Green peas", "quantity": 100, "unit": "g"},
+                {"item": "Yogurt, whisked", "quantity": 200, "unit": "g"},
+                {"item": "Water", "quantity": 120, "unit": "ml", "note": "for the vegetable gravy"},
+                {"item": "Red chilli powder", "quantity": 1, "unit": "tsp"},
+                {"item": "Oil or ghee", "quantity": 60, "unit": "ml"},
+                {"item": "Salt", "quantity": 1, "unit": "tsp", "note": "to taste, for gravy"},
+                {"item": "Cinnamon stick", "quantity": 1, "unit": "pcs", "note": "for biryani masala"},
+                {"item": "Cloves", "quantity": 4, "unit": "pcs"},
+                {"item": "Green cardamom", "quantity": 4, "unit": "pcs", "note": "for biryani masala"},
+                {"item": "Mace", "quantity": 1, "unit": "pcs", "note": "strands"},
+                {"item": "Fried onions (birista)", "quantity": 30, "unit": "g"},
+                {"item": "Saffron strands", "quantity": 0.1, "unit": "g", "note": "about 15-20 strands"},
+                {"item": "Warm milk", "quantity": 30, "unit": "ml", "note": "to soak saffron"},
+                {"item": "Mint leaves, chopped", "quantity": 15, "unit": "g"},
+                {"item": "Oil, butter, or ghee", "quantity": 30, "unit": "ml", "note": "for layering"}
+              ],
+              "steps": [
+                "Rinse and soak the basmati rice for 30 minutes, then drain. Boil the water with cardamom, cinnamon, bay leaf, star anise, and black cardamom, add the rice and salt, and cook until about 75% done (still with a slight bite); drain.",
+                "Heat oil or ghee in a pan and fry the sliced onions until deep golden brown; remove about 30 g as fried onion garnish and set aside.",
+                "In the same pan, add ginger-garlic paste and saute until the raw smell fades, then stir in the biryani masala spices (cinnamon, cloves, cardamom, mace).",
+                "Add the chopped carrot, potato, cauliflower, mushrooms, beans, and peas; mix well and cook for 3-4 minutes.",
+                "Stir in the whisked yogurt, red chilli powder, salt, and water; cover and cook (or pressure cook for 1 whistle) until the vegetables are just tender and the gravy is thick.",
+                "Soak the saffron strands in warm milk for 10 minutes.",
+                "In a heavy-bottomed pot, spread half the vegetable gravy, then layer half the rice on top; sprinkle with half the fried onions, mint, and saffron milk, and drizzle with a little oil. Repeat with the remaining gravy, rice, fried onions, mint, and saffron milk.",
+                "Cover tightly with a lid (seal the edges with dough or foil if needed) and cook on very low heat for 20-25 minutes, or bake at 180C for 20-25 minutes.",
+                "Let it rest for 5-7 minutes, then gently fluff and mix the layers before serving hot with raita."
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ui": {
+    "loginHero": "https://images.unsplash.com/photo-1742281257687-092746ad6021?q=80&w=1600&auto=format&fit=crop",
+    "logo": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?q=80&w=800&auto=format&fit=crop"
+  }
+}
